@@ -1,0 +1,662 @@
+nohup: ignoring input
+bash: /home/yanyq/anaconda3/lib/libtinfo.so.6: no version information available (required by bash)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BAC N=628853
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BAC_10_1.5
+
+Start time is 18:19:22, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BAC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342383 lines from file, containing valid SNP p-values for 8095473 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BAC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BAC_10_1.5.genes.raw
+
+
+End time is 18:19:57, Friday 22 Nov 2024 (elapsed: 00:00:35)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BCC N=649135
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BCC_10_1.5
+
+Start time is 18:19:59, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BCC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8338427 lines from file, containing valid SNP p-values for 8091840 SNPs in data (97.04% of lines, 35.7% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BCC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BCC_10_1.5.genes.raw
+
+
+End time is 18:20:36, Friday 22 Nov 2024 (elapsed: 00:00:37)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BGA N=628970
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BGA_10_1.5
+
+Start time is 18:20:39, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BGA... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342329 lines from file, containing valid SNP p-values for 8095423 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BGA_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BGA_10_1.5.genes.raw
+
+
+End time is 18:21:15, Friday 22 Nov 2024 (elapsed: 00:00:36)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BGC N=629836
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BGC_10_1.5
+
+Start time is 18:21:18, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BGC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342132 lines from file, containing valid SNP p-values for 8095241 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BGC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BGC_10_1.5.genes.raw
+
+
+End time is 18:21:55, Friday 22 Nov 2024 (elapsed: 00:00:37)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BLCA N=630822
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BLCA_10_1.5
+
+Start time is 18:21:59, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BLCA... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8341938 lines from file, containing valid SNP p-values for 8095095 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BLCA_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BLCA_10_1.5.genes.raw
+
+
+End time is 18:22:35, Friday 22 Nov 2024 (elapsed: 00:00:36)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BM N=629144
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BM_10_1.5
+
+Start time is 18:22:38, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BM... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342301 lines from file, containing valid SNP p-values for 8095408 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BM_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BM_10_1.5.genes.raw
+
+
+End time is 18:23:16, Friday 22 Nov 2024 (elapsed: 00:00:38)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BRCA N=512191
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BRCA_10_1.5
+
+Start time is 18:23:19, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-BRCA... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 7658399 lines from file, containing valid SNP p-values for 7586702 SNPs in data (99.06% of lines, 33.47% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BRCA_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-BRCA_10_1.5.genes.raw
+
+
+End time is 18:23:53, Friday 22 Nov 2024 (elapsed: 00:00:34)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CESC N=731349
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CESC_10_1.5
+
+Start time is 18:23:56, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CESC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 7174548 lines from file, containing valid SNP p-values for 7174548 SNPs in data (100% of lines, 31.65% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CESC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CESC_10_1.5.genes.raw
+
+
+End time is 18:24:31, Friday 22 Nov 2024 (elapsed: 00:00:35)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CML N=628743
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CML_10_1.5
+
+Start time is 18:24:34, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CML... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342406 lines from file, containing valid SNP p-values for 8095499 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CML_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CML_10_1.5.genes.raw
+
+
+End time is 18:25:09, Friday 22 Nov 2024 (elapsed: 00:00:35)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CORP N=499442
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CORP_10_1.5
+
+Start time is 18:25:13, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CORP... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8335226 lines from file, containing valid SNP p-values for 8088932 SNPs in data (97.05% of lines, 35.69% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CORP_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CORP_10_1.5.genes.raw
+
+
+End time is 18:25:49, Friday 22 Nov 2024 (elapsed: 00:00:36)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CRC N=500052
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CRC_10_1.5
+
+Start time is 18:25:52, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-CRC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 7113010 lines from file, containing valid SNP p-values for 7113010 SNPs in data (100% of lines, 31.38% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CRC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-CRC_10_1.5.genes.raw
+
+
+End time is 18:26:26, Friday 22 Nov 2024 (elapsed: 00:00:34)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-DLBC N=629679
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-DLBC_10_1.5
+
+Start time is 18:26:29, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-DLBC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342124 lines from file, containing valid SNP p-values for 8095236 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-DLBC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-DLBC_10_1.5.genes.raw
+
+
+End time is 18:27:06, Friday 22 Nov 2024 (elapsed: 00:00:37)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-ESCA N=335707
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-ESCA_10_1.5
+
+Start time is 18:27:08, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-ESCA... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 7213613 lines from file, containing valid SNP p-values for 7213613 SNPs in data (100% of lines, 31.83% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-ESCA_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-ESCA_10_1.5.genes.raw
+
+
+End time is 18:27:45, Friday 22 Nov 2024 (elapsed: 00:00:37)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-EYAD N=628850
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-EYAD_10_1.5
+
+Start time is 18:27:50, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-EYAD... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342348 lines from file, containing valid SNP p-values for 8095446 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-EYAD_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-EYAD_10_1.5.genes.raw
+
+
+End time is 18:28:25, Friday 22 Nov 2024 (elapsed: 00:00:35)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-GSS N=628841
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-GSS_10_1.5
+
+Start time is 18:28:28, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-GSS... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342359 lines from file, containing valid SNP p-values for 8095454 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-GSS_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-GSS_10_1.5.genes.raw
+
+
+End time is 18:29:05, Friday 22 Nov 2024 (elapsed: 00:00:37)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-HL N=770712
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-HL_10_1.5
+
+Start time is 18:29:08, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-HL... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 7153617 lines from file, containing valid SNP p-values for 7088035 SNPs in data (99.08% of lines, 31.27% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-HL_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-HL_10_1.5.genes.raw
+
+
+End time is 18:29:42, Friday 22 Nov 2024 (elapsed: 00:00:34)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-HNSC N=630910
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-HNSC_10_1.5
+
+Start time is 18:29:45, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-HNSC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8341938 lines from file, containing valid SNP p-values for 8095084 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-HNSC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-HNSC_10_1.5.genes.raw
+
+
+End time is 18:30:21, Friday 22 Nov 2024 (elapsed: 00:00:36)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-kidney N=631001
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-kidney_10_1.5
+
+Start time is 18:30:24, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-kidney... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8341875 lines from file, containing valid SNP p-values for 8095029 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-kidney_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-kidney_10_1.5.genes.raw
+
+
+End time is 18:31:03, Friday 22 Nov 2024 (elapsed: 00:00:39)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-LIHC N=629129
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-LIHC_10_1.5
+
+Start time is 18:31:06, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-LIHC... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 8342284 lines from file, containing valid SNP p-values for 8095385 SNPs in data (97.04% of lines, 35.72% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-LIHC_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-LIHC_10_1.5.genes.raw
+
+
+End time is 18:31:42, Friday 22 Nov 2024 (elapsed: 00:00:36)
+Welcome to MAGMA v1.10 (linux)
+Using flags:
+	--bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur
+	--pval /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-LL N=725638
+	--gene-annot /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot
+	--out /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-LL_10_1.5
+
+Start time is 18:31:45, Friday 22 Nov 2024
+
+Loading PLINK-format data...
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.fam... 503 individuals read
+Reading file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bim... 22665064 SNPs read
+Preparing file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.bed... 
+
+Reading SNP synonyms from file /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur.synonyms (auto-detected)
+	read 6012528 mapped synonyms from file, mapping to 3918595 SNPs in the data
+Reading SNP p-values from file /home/yanyq/share_genetics/result/PLACO/tmp_PLACO_AML-LL... 
+	detected 2 variables in file
+	using variable: variable 1 (SNP id)
+	using variable: variable 2 (p-value)
+	read 7181336 lines from file, containing valid SNP p-values for 7181336 SNPs in data (100% of lines, 31.68% of SNPs in data)
+Loading gene annotation from file /home/yanyq/share_genetics/result/MAGMA/anno/VPS9D1-AS1_g1000_eur_10_1.5.genes.annot... 
+	1 gene definitions read from file
+	found 1 genes containing valid SNPs in genotype data
+
+
+Starting gene analysis... 
+	using model: SNPwise-mean
+                                                                                                                   	writing gene analysis results to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-LL_10_1.5.genes.out
+	writing intermediate output to file /home/yanyq/share_genetics/result/MAGMA_VPS9D1-AS1/asso/PLACO_AML-LL_10_1.5.genes.raw
+
+
+End time is 18:32:19, Friday 22 Nov 2024 (elapsed: 00:00:34)

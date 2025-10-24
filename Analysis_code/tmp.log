@@ -1,0 +1,4554 @@
+nohup: ignoring input
+/bin/bash: /home/yanyq/anaconda3/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+
+Attaching package: ‘vroom’
+
+The following objects are masked from ‘package:readr’:
+
+    as.col_spec, col_character, col_date, col_datetime, col_double,
+    col_factor, col_guess, col_integer, col_logical, col_number,
+    col_skip, col_time, cols, cols_condense, cols_only, date_names,
+    date_names_lang, date_names_langs, default_locale, fwf_cols,
+    fwf_empty, fwf_positions, fwf_widths, locale, output_column,
+    problems, spec
+
+[1] "AML-AML"
+[1] "AML-BAC"
+[1] "AML-BCC"
+Rows: 8338427 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-BGA"
+[1] "AML-BGC"
+[1] "AML-BLCA"
+[1] "AML-BM"
+[1] "AML-BRCA"
+Rows: 7658399 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-CESC"
+[1] "AML-CML"
+[1] "AML-CORP"
+[1] "AML-CRC"
+Rows: 7113010 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-DLBC"
+[1] "AML-ESCA"
+[1] "AML-EYAD"
+[1] "AML-GSS"
+[1] "AML-HL"
+[1] "AML-HNSC"
+[1] "AML-kidney"
+[1] "AML-LIHC"
+[1] "AML-LL"
+[1] "AML-lung"
+Rows: 6840238 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-MCL"
+[1] "AML-MESO"
+[1] "AML-MM"
+[1] "AML-MS"
+[1] "AML-MZBL"
+[1] "AML-OV"
+Rows: 7451742 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-PAAD"
+[1] "AML-PRAD"
+Rows: 7944664 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-SCC"
+[1] "AML-SI"
+[1] "AML-SKCM"
+Rows: 8341463 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-STAD"
+[1] "AML-TEST"
+Rows: 8332521 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-THCA"
+Rows: 8341809 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.AML, a2.AML
+dbl (3): hg19chr.AML, bp.AML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "AML-UCEC"
+[1] "AML-VULVA"
+[1] "BAC-AML"
+[1] "BAC-BAC"
+[1] "BAC-BCC"
+Rows: 8338479 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-BGA"
+[1] "BAC-BGC"
+[1] "BAC-BLCA"
+[1] "BAC-BM"
+[1] "BAC-BRCA"
+Rows: 7658473 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-CESC"
+[1] "BAC-CML"
+[1] "BAC-CORP"
+[1] "BAC-CRC"
+Rows: 7113073 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-DLBC"
+[1] "BAC-ESCA"
+[1] "BAC-EYAD"
+[1] "BAC-GSS"
+[1] "BAC-HL"
+[1] "BAC-HNSC"
+[1] "BAC-kidney"
+[1] "BAC-LIHC"
+[1] "BAC-LL"
+[1] "BAC-lung"
+[1] "BAC-MCL"
+[1] "BAC-MESO"
+[1] "BAC-MM"
+[1] "BAC-MS"
+[1] "BAC-MZBL"
+[1] "BAC-OV"
+[1] "BAC-PAAD"
+[1] "BAC-PRAD"
+Rows: 7944734 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-SCC"
+Rows: 8341747 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-SI"
+[1] "BAC-SKCM"
+Rows: 8341505 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-STAD"
+[1] "BAC-TEST"
+[1] "BAC-THCA"
+[1] "BAC-UCEC"
+Rows: 7385602 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BAC, a2.BAC
+dbl (3): hg19chr.BAC, bp.BAC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BAC-VULVA"
+[1] "BCC-AML"
+[1] "BCC-BAC"
+[1] "BCC-BCC"
+[1] "BCC-BGA"
+Rows: 8338474 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-BGC"
+Rows: 8338431 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-BLCA"
+Rows: 8338555 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-BM"
+Rows: 8338515 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-BRCA"
+Rows: 7657130 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-CESC"
+Rows: 7173394 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-CML"
+Rows: 8338499 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-CORP"
+Rows: 8332876 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-CRC"
+Rows: 7111843 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-DLBC"
+Rows: 8338487 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-ESCA"
+Rows: 7212465 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-EYAD"
+Rows: 8338437 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-GSS"
+Rows: 8338444 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-HL"
+Rows: 7152354 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-HNSC"
+Rows: 8338568 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-kidney"
+Rows: 8338510 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-LIHC"
+Rows: 8338461 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-LL"
+Rows: 7180185 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-lung"
+Rows: 6839268 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-MCL"
+Rows: 8338466 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-MESO"
+Rows: 8338490 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-MM"
+Rows: 8338451 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-MS"
+Rows: 8338463 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-MZBL"
+Rows: 8338463 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-OV"
+Rows: 7450458 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-PAAD"
+Rows: 8338533 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-PRAD"
+Rows: 7943312 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-SCC"
+Rows: 8338660 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-SI"
+Rows: 8338436 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-SKCM"
+Rows: 8338474 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-STAD"
+Rows: 8338538 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-TEST"
+Rows: 8330631 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-THCA"
+Rows: 8338277 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-UCEC"
+Rows: 7384238 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BCC-VULVA"
+Rows: 8332671 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BCC, a2.BCC
+dbl (3): hg19chr.BCC, bp.BCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-AML"
+[1] "BGA-BAC"
+[1] "BGA-BCC"
+[1] "BGA-BGA"
+[1] "BGA-BGC"
+Rows: 8342174 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-BLCA"
+Rows: 8342015 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-BM"
+[1] "BGA-BRCA"
+Rows: 7658500 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-CESC"
+Rows: 7174632 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-CML"
+[1] "BGA-CORP"
+[1] "BGA-CRC"
+Rows: 7113097 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-DLBC"
+[1] "BGA-ESCA"
+[1] "BGA-EYAD"
+[1] "BGA-GSS"
+[1] "BGA-HL"
+[1] "BGA-HNSC"
+[1] "BGA-kidney"
+[1] "BGA-LIHC"
+[1] "BGA-LL"
+[1] "BGA-lung"
+Rows: 6840343 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-MCL"
+[1] "BGA-MESO"
+[1] "BGA-MM"
+[1] "BGA-MS"
+[1] "BGA-MZBL"
+[1] "BGA-OV"
+Rows: 7451842 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-PAAD"
+Rows: 8342169 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-PRAD"
+Rows: 7944769 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-SCC"
+Rows: 8341735 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-SI"
+[1] "BGA-SKCM"
+Rows: 8341489 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-STAD"
+[1] "BGA-TEST"
+[1] "BGA-THCA"
+Rows: 8341845 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-UCEC"
+Rows: 7385638 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGA, a2.BGA
+dbl (3): hg19chr.BGA, bp.BGA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGA-VULVA"
+[1] "BGC-AML"
+[1] "BGC-BAC"
+[1] "BGC-BCC"
+[1] "BGC-BGA"
+[1] "BGC-BGC"
+[1] "BGC-BLCA"
+Rows: 8341894 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-BM"
+[1] "BGC-BRCA"
+Rows: 7658476 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-CESC"
+[1] "BGC-CML"
+[1] "BGC-CORP"
+[1] "BGC-CRC"
+Rows: 7113066 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-DLBC"
+[1] "BGC-ESCA"
+[1] "BGC-EYAD"
+[1] "BGC-GSS"
+[1] "BGC-HL"
+[1] "BGC-HNSC"
+[1] "BGC-kidney"
+[1] "BGC-LIHC"
+[1] "BGC-LL"
+[1] "BGC-lung"
+Rows: 6840301 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-MCL"
+[1] "BGC-MESO"
+[1] "BGC-MM"
+[1] "BGC-MS"
+[1] "BGC-MZBL"
+[1] "BGC-OV"
+Rows: 7451794 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-PAAD"
+Rows: 8342053 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-PRAD"
+Rows: 7944725 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-SCC"
+[1] "BGC-SI"
+[1] "BGC-SKCM"
+Rows: 8341405 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-STAD"
+[1] "BGC-TEST"
+[1] "BGC-THCA"
+Rows: 8341721 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-UCEC"
+Rows: 7385581 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BGC, a2.BGC
+dbl (3): hg19chr.BGC, bp.BGC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BGC-VULVA"
+[1] "BLCA-AML"
+[1] "BLCA-BAC"
+[1] "BLCA-BCC"
+[1] "BLCA-BGA"
+[1] "BLCA-BGC"
+[1] "BLCA-BLCA"
+[1] "BLCA-BM"
+[1] "BLCA-BRCA"
+Rows: 7658701 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-CESC"
+[1] "BLCA-CML"
+[1] "BLCA-CORP"
+[1] "BLCA-CRC"
+[1] "BLCA-DLBC"
+[1] "BLCA-ESCA"
+[1] "BLCA-EYAD"
+[1] "BLCA-GSS"
+[1] "BLCA-HL"
+[1] "BLCA-HNSC"
+Rows: 8341881 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-kidney"
+Rows: 8341819 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-LIHC"
+[1] "BLCA-LL"
+[1] "BLCA-lung"
+Rows: 6840550 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-MCL"
+[1] "BLCA-MESO"
+[1] "BLCA-MM"
+[1] "BLCA-MS"
+[1] "BLCA-MZBL"
+[1] "BLCA-OV"
+Rows: 7452057 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-PAAD"
+Rows: 8341930 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-PRAD"
+Rows: 7944991 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-SCC"
+[1] "BLCA-SI"
+[1] "BLCA-SKCM"
+Rows: 8341385 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-STAD"
+[1] "BLCA-TEST"
+[1] "BLCA-THCA"
+[1] "BLCA-UCEC"
+Rows: 7385841 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BLCA, a2.BLCA
+dbl (3): hg19chr.BLCA, bp.BLCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BLCA-VULVA"
+[1] "BM-AML"
+[1] "BM-BAC"
+[1] "BM-BCC"
+[1] "BM-BGA"
+[1] "BM-BGC"
+[1] "BM-BLCA"
+Rows: 8342016 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-BM"
+[1] "BM-BRCA"
+Rows: 7658509 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-CESC"
+[1] "BM-CML"
+[1] "BM-CORP"
+[1] "BM-CRC"
+Rows: 7113101 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-DLBC"
+[1] "BM-ESCA"
+[1] "BM-EYAD"
+Rows: 8342330 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-GSS"
+[1] "BM-HL"
+[1] "BM-HNSC"
+[1] "BM-kidney"
+Rows: 8341955 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-LIHC"
+Rows: 8342278 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-LL"
+Rows: 7181428 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-lung"
+Rows: 6840333 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-MCL"
+[1] "BM-MESO"
+Rows: 8342322 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-MM"
+Rows: 8342209 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-MS"
+[1] "BM-MZBL"
+[1] "BM-OV"
+Rows: 7451843 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-PAAD"
+Rows: 8342148 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-PRAD"
+Rows: 7944769 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-SCC"
+Rows: 8341720 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-SI"
+[1] "BM-SKCM"
+Rows: 8341502 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-STAD"
+[1] "BM-TEST"
+[1] "BM-THCA"
+Rows: 8341829 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-UCEC"
+Rows: 7385640 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BM, a2.BM
+dbl (3): hg19chr.BM, bp.BM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BM-VULVA"
+[1] "BRCA-AML"
+[1] "BRCA-BAC"
+[1] "BRCA-BCC"
+[1] "BRCA-BGA"
+[1] "BRCA-BGC"
+[1] "BRCA-BLCA"
+[1] "BRCA-BM"
+[1] "BRCA-BRCA"
+[1] "BRCA-CESC"
+[1] "BRCA-CML"
+[1] "BRCA-CORP"
+[1] "BRCA-CRC"
+[1] "BRCA-DLBC"
+[1] "BRCA-ESCA"
+[1] "BRCA-EYAD"
+[1] "BRCA-GSS"
+[1] "BRCA-HL"
+[1] "BRCA-HNSC"
+Rows: 7658589 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-kidney"
+Rows: 7658544 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-LIHC"
+[1] "BRCA-LL"
+[1] "BRCA-lung"
+Rows: 7556744 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-MCL"
+[1] "BRCA-MESO"
+[1] "BRCA-MM"
+[1] "BRCA-MS"
+[1] "BRCA-MZBL"
+[1] "BRCA-OV"
+Rows: 8562380 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-PAAD"
+Rows: 7658539 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-PRAD"
+Rows: 8673385 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-SCC"
+[1] "BRCA-SI"
+[1] "BRCA-SKCM"
+Rows: 7658225 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-STAD"
+[1] "BRCA-TEST"
+[1] "BRCA-THCA"
+[1] "BRCA-UCEC"
+Rows: 8426052 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.BRCA, a2.BRCA
+dbl (3): hg19chr.BRCA, bp.BRCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "BRCA-VULVA"
+[1] "CESC-AML"
+[1] "CESC-BAC"
+[1] "CESC-BCC"
+[1] "CESC-BGA"
+[1] "CESC-BGC"
+Rows: 7174591 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-BLCA"
+Rows: 7174828 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-BM"
+[1] "CESC-BRCA"
+Rows: 7947162 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-CESC"
+[1] "CESC-CML"
+[1] "CESC-CORP"
+Rows: 7173248 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-CRC"
+Rows: 7657228 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-DLBC"
+[1] "CESC-ESCA"
+Rows: 7730526 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-EYAD"
+Rows: 7174562 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-GSS"
+[1] "CESC-HL"
+Rows: 7630194 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-HNSC"
+[1] "CESC-kidney"
+Rows: 7174697 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-LIHC"
+[1] "CESC-LL"
+Rows: 7964320 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-lung"
+Rows: 7171308 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-MCL"
+[1] "CESC-MESO"
+[1] "CESC-MM"
+[1] "CESC-MS"
+Rows: 7174582 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-MZBL"
+[1] "CESC-OV"
+Rows: 7875913 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-PAAD"
+Rows: 7174680 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-PRAD"
+Rows: 7912944 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-SCC"
+Rows: 7174646 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-SI"
+Rows: 7174598 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-SKCM"
+Rows: 7174417 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-STAD"
+[1] "CESC-TEST"
+Rows: 7176657 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-THCA"
+Rows: 7174495 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-UCEC"
+Rows: 7832284 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CESC, a2.CESC
+dbl (3): hg19chr.CESC, bp.CESC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CESC-VULVA"
+[1] "CML-AML"
+[1] "CML-BAC"
+[1] "CML-BCC"
+[1] "CML-BGA"
+[1] "CML-BGC"
+[1] "CML-BLCA"
+Rows: 8342034 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-BM"
+[1] "CML-BRCA"
+Rows: 7658503 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-CESC"
+[1] "CML-CML"
+[1] "CML-CORP"
+[1] "CML-CRC"
+Rows: 7113093 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-DLBC"
+[1] "CML-ESCA"
+[1] "CML-EYAD"
+[1] "CML-GSS"
+[1] "CML-HL"
+[1] "CML-HNSC"
+[1] "CML-kidney"
+[1] "CML-LIHC"
+[1] "CML-LL"
+[1] "CML-lung"
+Rows: 6840332 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-MCL"
+[1] "CML-MESO"
+[1] "CML-MM"
+[1] "CML-MS"
+[1] "CML-MZBL"
+[1] "CML-OV"
+Rows: 7451836 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-PAAD"
+Rows: 8342230 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-PRAD"
+Rows: 7944765 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-SCC"
+Rows: 8341746 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-SI"
+[1] "CML-SKCM"
+Rows: 8341543 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-STAD"
+[1] "CML-TEST"
+[1] "CML-THCA"
+Rows: 8341876 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CML, a2.CML
+dbl (3): hg19chr.CML, bp.CML, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CML-UCEC"
+[1] "CML-VULVA"
+[1] "CORP-AML"
+[1] "CORP-BAC"
+[1] "CORP-BCC"
+[1] "CORP-BGA"
+[1] "CORP-BGC"
+[1] "CORP-BLCA"
+[1] "CORP-BM"
+[1] "CORP-BRCA"
+Rows: 7656608 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-CESC"
+[1] "CORP-CML"
+[1] "CORP-CORP"
+[1] "CORP-CRC"
+Rows: 7111729 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-DLBC"
+[1] "CORP-ESCA"
+[1] "CORP-EYAD"
+[1] "CORP-GSS"
+[1] "CORP-HL"
+[1] "CORP-HNSC"
+[1] "CORP-kidney"
+[1] "CORP-LIHC"
+Rows: 8335214 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-LL"
+[1] "CORP-lung"
+Rows: 6838805 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-MCL"
+[1] "CORP-MESO"
+[1] "CORP-MM"
+[1] "CORP-MS"
+[1] "CORP-MZBL"
+[1] "CORP-OV"
+Rows: 7449965 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-PAAD"
+Rows: 8335253 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-PRAD"
+Rows: 7942745 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-SCC"
+Rows: 8335072 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-SI"
+[1] "CORP-SKCM"
+Rows: 8334795 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-STAD"
+[1] "CORP-TEST"
+Rows: 8325184 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-THCA"
+Rows: 8335050 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-UCEC"
+Rows: 7383873 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CORP, a2.CORP
+dbl (3): hg19chr.CORP, bp.CORP, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CORP-VULVA"
+[1] "CRC-AML"
+[1] "CRC-BAC"
+[1] "CRC-BCC"
+[1] "CRC-BGA"
+[1] "CRC-BGC"
+[1] "CRC-BLCA"
+Rows: 7113262 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-BM"
+[1] "CRC-BRCA"
+Rows: 7851713 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-CESC"
+[1] "CRC-CML"
+[1] "CRC-CORP"
+[1] "CRC-CRC"
+[1] "CRC-DLBC"
+Rows: 7113054 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-ESCA"
+Rows: 7854207 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-EYAD"
+[1] "CRC-GSS"
+[1] "CRC-HL"
+[1] "CRC-HNSC"
+Rows: 7113130 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-kidney"
+Rows: 7113150 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-LIHC"
+[1] "CRC-LL"
+[1] "CRC-lung"
+Rows: 7206457 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-MCL"
+[1] "CRC-MESO"
+[1] "CRC-MM"
+[1] "CRC-MS"
+[1] "CRC-MZBL"
+[1] "CRC-OV"
+Rows: 7725639 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-PAAD"
+Rows: 7113137 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-PRAD"
+Rows: 7771903 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-SCC"
+[1] "CRC-SI"
+[1] "CRC-SKCM"
+Rows: 7112860 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-STAD"
+Rows: 7113137 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-TEST"
+[1] "CRC-THCA"
+Rows: 7112952 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-UCEC"
+Rows: 7676144 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.CRC, a2.CRC
+dbl (3): hg19chr.CRC, bp.CRC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "CRC-VULVA"
+[1] "DLBC-AML"
+[1] "DLBC-BAC"
+[1] "DLBC-BCC"
+[1] "DLBC-BGA"
+[1] "DLBC-BGC"
+[1] "DLBC-BLCA"
+[1] "DLBC-BM"
+[1] "DLBC-BRCA"
+Rows: 7658471 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-CESC"
+[1] "DLBC-CML"
+[1] "DLBC-CORP"
+[1] "DLBC-CRC"
+[1] "DLBC-DLBC"
+[1] "DLBC-ESCA"
+[1] "DLBC-EYAD"
+[1] "DLBC-GSS"
+[1] "DLBC-HL"
+[1] "DLBC-HNSC"
+[1] "DLBC-kidney"
+[1] "DLBC-LIHC"
+[1] "DLBC-LL"
+[1] "DLBC-lung"
+Rows: 6840332 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-MCL"
+[1] "DLBC-MESO"
+[1] "DLBC-MM"
+[1] "DLBC-MS"
+[1] "DLBC-MZBL"
+[1] "DLBC-OV"
+Rows: 7451829 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-PAAD"
+Rows: 8342023 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-PRAD"
+Rows: 7944758 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-SCC"
+[1] "DLBC-SI"
+[1] "DLBC-SKCM"
+Rows: 8341426 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-STAD"
+[1] "DLBC-TEST"
+[1] "DLBC-THCA"
+[1] "DLBC-UCEC"
+Rows: 7385621 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.DLBC, a2.DLBC
+dbl (3): hg19chr.DLBC, bp.DLBC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "DLBC-VULVA"
+[1] "ESCA-AML"
+[1] "ESCA-BAC"
+[1] "ESCA-BCC"
+[1] "ESCA-BGA"
+[1] "ESCA-BGC"
+[1] "ESCA-BLCA"
+Rows: 7213874 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-BM"
+[1] "ESCA-BRCA"
+Rows: 7945064 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-CESC"
+[1] "ESCA-CML"
+[1] "ESCA-CORP"
+[1] "ESCA-CRC"
+[1] "ESCA-DLBC"
+[1] "ESCA-ESCA"
+[1] "ESCA-EYAD"
+[1] "ESCA-GSS"
+[1] "ESCA-HL"
+[1] "ESCA-HNSC"
+Rows: 7213732 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-kidney"
+[1] "ESCA-LIHC"
+[1] "ESCA-LL"
+[1] "ESCA-lung"
+Rows: 7291210 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-MCL"
+[1] "ESCA-MESO"
+[1] "ESCA-MM"
+[1] "ESCA-MS"
+[1] "ESCA-MZBL"
+[1] "ESCA-OV"
+Rows: 7793481 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-PAAD"
+Rows: 7213741 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-PRAD"
+Rows: 7867430 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-SCC"
+[1] "ESCA-SI"
+[1] "ESCA-SKCM"
+Rows: 7213466 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-STAD"
+[1] "ESCA-TEST"
+[1] "ESCA-THCA"
+Rows: 7213549 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-UCEC"
+Rows: 7740796 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.ESCA, a2.ESCA
+dbl (3): hg19chr.ESCA, bp.ESCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "ESCA-VULVA"
+[1] "EYAD-AML"
+[1] "EYAD-BAC"
+[1] "EYAD-BCC"
+[1] "EYAD-BGA"
+[1] "EYAD-BGC"
+[1] "EYAD-BLCA"
+[1] "EYAD-BM"
+[1] "EYAD-BRCA"
+Rows: 7658432 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-CESC"
+[1] "EYAD-CML"
+[1] "EYAD-CORP"
+[1] "EYAD-CRC"
+Rows: 7113024 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-DLBC"
+[1] "EYAD-ESCA"
+[1] "EYAD-EYAD"
+[1] "EYAD-GSS"
+[1] "EYAD-HL"
+[1] "EYAD-HNSC"
+[1] "EYAD-kidney"
+[1] "EYAD-LIHC"
+Rows: 8342294 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-LL"
+[1] "EYAD-lung"
+Rows: 6840265 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-MCL"
+[1] "EYAD-MESO"
+[1] "EYAD-MM"
+[1] "EYAD-MS"
+[1] "EYAD-MZBL"
+[1] "EYAD-OV"
+[1] "EYAD-PAAD"
+Rows: 8342163 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-PRAD"
+Rows: 7944695 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-SCC"
+Rows: 8341683 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-SI"
+[1] "EYAD-SKCM"
+Rows: 8341475 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-STAD"
+[1] "EYAD-TEST"
+[1] "EYAD-THCA"
+Rows: 8341813 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.EYAD, a2.EYAD
+dbl (3): hg19chr.EYAD, bp.EYAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "EYAD-UCEC"
+[1] "EYAD-VULVA"
+[1] "GSS-AML"
+[1] "GSS-BAC"
+[1] "GSS-BCC"
+[1] "GSS-BGA"
+[1] "GSS-BGC"
+[1] "GSS-BLCA"
+[1] "GSS-BM"
+[1] "GSS-BRCA"
+Rows: 7658395 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-CESC"
+[1] "GSS-CML"
+[1] "GSS-CORP"
+[1] "GSS-CRC"
+Rows: 7113030 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-DLBC"
+[1] "GSS-ESCA"
+[1] "GSS-EYAD"
+[1] "GSS-GSS"
+[1] "GSS-HL"
+[1] "GSS-HNSC"
+[1] "GSS-kidney"
+[1] "GSS-LIHC"
+Rows: 8342299 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-LL"
+Rows: 7181360 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-lung"
+Rows: 6840255 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-MCL"
+Rows: 8342385 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-MESO"
+[1] "GSS-MM"
+[1] "GSS-MS"
+[1] "GSS-MZBL"
+[1] "GSS-OV"
+Rows: 7451751 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-PAAD"
+Rows: 8342148 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-PRAD"
+Rows: 7944681 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-SCC"
+Rows: 8341690 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-SI"
+[1] "GSS-SKCM"
+Rows: 8341500 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-STAD"
+Rows: 8342121 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.GSS, a2.GSS
+dbl (3): hg19chr.GSS, bp.GSS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "GSS-TEST"
+[1] "GSS-THCA"
+[1] "GSS-UCEC"
+[1] "GSS-VULVA"
+[1] "HL-AML"
+[1] "HL-BAC"
+[1] "HL-BCC"
+[1] "HL-BGA"
+[1] "HL-BGC"
+Rows: 7153671 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-BLCA"
+[1] "HL-BM"
+[1] "HL-BRCA"
+Rows: 7902959 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-CESC"
+[1] "HL-CML"
+[1] "HL-CORP"
+[1] "HL-CRC"
+Rows: 7414135 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-DLBC"
+[1] "HL-ESCA"
+[1] "HL-EYAD"
+[1] "HL-GSS"
+[1] "HL-HL"
+[1] "HL-HNSC"
+[1] "HL-kidney"
+[1] "HL-LIHC"
+Rows: 7153695 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-LL"
+Rows: 7637056 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-lung"
+Rows: 7133762 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-MCL"
+[1] "HL-MESO"
+[1] "HL-MM"
+[1] "HL-MS"
+[1] "HL-MZBL"
+[1] "HL-OV"
+Rows: 7849839 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-PAAD"
+[1] "HL-PRAD"
+Rows: 7910841 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-SCC"
+Rows: 7153719 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-SI"
+[1] "HL-SKCM"
+Rows: 7153462 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-STAD"
+[1] "HL-TEST"
+[1] "HL-THCA"
+Rows: 7153588 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-UCEC"
+Rows: 7825037 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HL, a2.HL
+dbl (3): hg19chr.HL, bp.HL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HL-VULVA"
+[1] "HNSC-AML"
+[1] "HNSC-BAC"
+[1] "HNSC-BCC"
+[1] "HNSC-BGA"
+[1] "HNSC-BGC"
+[1] "HNSC-BLCA"
+[1] "HNSC-BM"
+[1] "HNSC-BRCA"
+[1] "HNSC-CESC"
+[1] "HNSC-CML"
+[1] "HNSC-CORP"
+[1] "HNSC-CRC"
+[1] "HNSC-DLBC"
+[1] "HNSC-ESCA"
+[1] "HNSC-EYAD"
+[1] "HNSC-GSS"
+[1] "HNSC-HL"
+[1] "HNSC-HNSC"
+[1] "HNSC-kidney"
+Rows: 8341762 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HNSC, a2.HNSC
+dbl (3): hg19chr.HNSC, bp.HNSC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HNSC-LIHC"
+[1] "HNSC-LL"
+[1] "HNSC-lung"
+Rows: 6840427 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HNSC, a2.HNSC
+dbl (3): hg19chr.HNSC, bp.HNSC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HNSC-MCL"
+[1] "HNSC-MESO"
+[1] "HNSC-MM"
+[1] "HNSC-MS"
+[1] "HNSC-MZBL"
+[1] "HNSC-OV"
+Rows: 7451935 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HNSC, a2.HNSC
+dbl (3): hg19chr.HNSC, bp.HNSC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HNSC-PAAD"
+Rows: 8341868 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HNSC, a2.HNSC
+dbl (3): hg19chr.HNSC, bp.HNSC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HNSC-PRAD"
+Rows: 7944835 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HNSC, a2.HNSC
+dbl (3): hg19chr.HNSC, bp.HNSC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HNSC-SCC"
+[1] "HNSC-SI"
+[1] "HNSC-SKCM"
+Rows: 8341363 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.HNSC, a2.HNSC
+dbl (3): hg19chr.HNSC, bp.HNSC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "HNSC-STAD"
+[1] "HNSC-TEST"
+[1] "HNSC-THCA"
+[1] "HNSC-UCEC"
+[1] "HNSC-VULVA"
+[1] "kidney-AML"
+[1] "kidney-BAC"
+[1] "kidney-BCC"
+[1] "kidney-BGA"
+[1] "kidney-BGC"
+[1] "kidney-BLCA"
+[1] "kidney-BM"
+[1] "kidney-BRCA"
+[1] "kidney-CESC"
+[1] "kidney-CML"
+[1] "kidney-CORP"
+[1] "kidney-CRC"
+[1] "kidney-DLBC"
+[1] "kidney-ESCA"
+[1] "kidney-EYAD"
+[1] "kidney-GSS"
+[1] "kidney-HL"
+[1] "kidney-HNSC"
+[1] "kidney-kidney"
+[1] "kidney-LIHC"
+[1] "kidney-LL"
+[1] "kidney-lung"
+Rows: 6840420 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.kidney, a2.kidney
+dbl (3): hg19chr.kidney, bp.kidney, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "kidney-MCL"
+[1] "kidney-MESO"
+[1] "kidney-MM"
+[1] "kidney-MS"
+[1] "kidney-MZBL"
+[1] "kidney-OV"
+Rows: 7451906 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.kidney, a2.kidney
+dbl (3): hg19chr.kidney, bp.kidney, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "kidney-PAAD"
+Rows: 8341867 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.kidney, a2.kidney
+dbl (3): hg19chr.kidney, bp.kidney, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "kidney-PRAD"
+Rows: 7944818 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.kidney, a2.kidney
+dbl (3): hg19chr.kidney, bp.kidney, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "kidney-SCC"
+[1] "kidney-SI"
+[1] "kidney-SKCM"
+Rows: 8341321 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.kidney, a2.kidney
+dbl (3): hg19chr.kidney, bp.kidney, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "kidney-STAD"
+[1] "kidney-TEST"
+[1] "kidney-THCA"
+[1] "kidney-UCEC"
+Rows: 7385721 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.kidney, a2.kidney
+dbl (3): hg19chr.kidney, bp.kidney, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "kidney-VULVA"
+[1] "LIHC-AML"
+[1] "LIHC-BAC"
+[1] "LIHC-BCC"
+[1] "LIHC-BGA"
+[1] "LIHC-BGC"
+Rows: 8342340 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-BLCA"
+Rows: 8341989 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-BM"
+[1] "LIHC-BRCA"
+Rows: 7658483 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-CESC"
+[1] "LIHC-CML"
+[1] "LIHC-CORP"
+[1] "LIHC-CRC"
+Rows: 7113077 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-DLBC"
+[1] "LIHC-ESCA"
+[1] "LIHC-EYAD"
+[1] "LIHC-GSS"
+[1] "LIHC-HL"
+[1] "LIHC-HNSC"
+Rows: 8341966 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-kidney"
+Rows: 8341927 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-LIHC"
+[1] "LIHC-LL"
+[1] "LIHC-lung"
+Rows: 6840319 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-MCL"
+[1] "LIHC-MESO"
+Rows: 8342291 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-MM"
+[1] "LIHC-MS"
+[1] "LIHC-MZBL"
+Rows: 8342306 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-OV"
+Rows: 7451815 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-PAAD"
+Rows: 8342146 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-PRAD"
+Rows: 7944736 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-SCC"
+Rows: 8341671 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-SI"
+Rows: 8342212 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-SKCM"
+Rows: 8341472 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-STAD"
+[1] "LIHC-TEST"
+[1] "LIHC-THCA"
+Rows: 8341815 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-UCEC"
+Rows: 7385606 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LIHC-VULVA"
+Rows: 8335018 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LIHC, a2.LIHC
+dbl (3): hg19chr.LIHC, bp.LIHC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-AML"
+[1] "LL-BAC"
+[1] "LL-BCC"
+[1] "LL-BGA"
+[1] "LL-BGC"
+[1] "LL-BLCA"
+Rows: 7181619 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-BM"
+[1] "LL-BRCA"
+Rows: 7955246 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-CESC"
+[1] "LL-CML"
+[1] "LL-CORP"
+[1] "LL-CRC"
+Rows: 7664847 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-DLBC"
+Rows: 7181390 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-ESCA"
+Rows: 7738560 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-EYAD"
+[1] "LL-GSS"
+[1] "LL-HL"
+[1] "LL-HNSC"
+[1] "LL-kidney"
+Rows: 7181488 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-LIHC"
+[1] "LL-LL"
+[1] "LL-lung"
+Rows: 7177937 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-MCL"
+Rows: 7181394 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-MESO"
+Rows: 7181443 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-MM"
+[1] "LL-MS"
+[1] "LL-MZBL"
+Rows: 7181363 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-OV"
+Rows: 7883210 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-PAAD"
+Rows: 7181468 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-PRAD"
+Rows: 7920370 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-SCC"
+Rows: 7181432 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-SI"
+[1] "LL-SKCM"
+Rows: 7181203 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-STAD"
+[1] "LL-TEST"
+[1] "LL-THCA"
+Rows: 7181283 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-UCEC"
+Rows: 7839314 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.LL, a2.LL
+dbl (3): hg19chr.LL, bp.LL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "LL-VULVA"
+[1] "lung-AML"
+[1] "lung-BAC"
+[1] "lung-BCC"
+[1] "lung-BGA"
+[1] "lung-BGC"
+[1] "lung-BLCA"
+[1] "lung-BM"
+[1] "lung-BRCA"
+[1] "lung-CESC"
+[1] "lung-CML"
+[1] "lung-CORP"
+[1] "lung-CRC"
+[1] "lung-DLBC"
+[1] "lung-ESCA"
+[1] "lung-EYAD"
+[1] "lung-GSS"
+[1] "lung-HL"
+[1] "lung-HNSC"
+[1] "lung-kidney"
+[1] "lung-LIHC"
+[1] "lung-LL"
+[1] "lung-lung"
+[1] "lung-MCL"
+[1] "lung-MESO"
+[1] "lung-MM"
+[1] "lung-MS"
+[1] "lung-MZBL"
+[1] "lung-OV"
+Rows: 7449917 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.lung, a2.lung
+dbl (3): hg19chr.lung, bp.lung, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "lung-PAAD"
+Rows: 6840376 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.lung, a2.lung
+dbl (3): hg19chr.lung, bp.lung, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "lung-PRAD"
+Rows: 7489364 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.lung, a2.lung
+dbl (3): hg19chr.lung, bp.lung, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "lung-SCC"
+[1] "lung-SI"
+[1] "lung-SKCM"
+Rows: 6840172 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.lung, a2.lung
+dbl (3): hg19chr.lung, bp.lung, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "lung-STAD"
+[1] "lung-TEST"
+[1] "lung-THCA"
+[1] "lung-UCEC"
+Rows: 7414788 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.lung, a2.lung
+dbl (3): hg19chr.lung, bp.lung, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "lung-VULVA"
+[1] "MCL-AML"
+[1] "MCL-BAC"
+[1] "MCL-BCC"
+[1] "MCL-BGA"
+[1] "MCL-BGC"
+[1] "MCL-BLCA"
+[1] "MCL-BM"
+[1] "MCL-BRCA"
+Rows: 7658440 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-CESC"
+[1] "MCL-CML"
+[1] "MCL-CORP"
+[1] "MCL-CRC"
+Rows: 7113061 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-DLBC"
+[1] "MCL-ESCA"
+[1] "MCL-EYAD"
+[1] "MCL-GSS"
+[1] "MCL-HL"
+[1] "MCL-HNSC"
+[1] "MCL-kidney"
+[1] "MCL-LIHC"
+[1] "MCL-LL"
+[1] "MCL-lung"
+Rows: 6840281 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-MCL"
+[1] "MCL-MESO"
+[1] "MCL-MM"
+[1] "MCL-MS"
+[1] "MCL-MZBL"
+[1] "MCL-OV"
+Rows: 7451798 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-PAAD"
+Rows: 8342162 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-PRAD"
+Rows: 7944720 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-SCC"
+Rows: 8341730 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-SI"
+[1] "MCL-SKCM"
+Rows: 8341497 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-STAD"
+[1] "MCL-TEST"
+Rows: 8332556 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-THCA"
+Rows: 8341840 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MCL, a2.MCL
+dbl (3): hg19chr.MCL, bp.MCL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MCL-UCEC"
+[1] "MCL-VULVA"
+[1] "MESO-AML"
+[1] "MESO-BAC"
+[1] "MESO-BCC"
+[1] "MESO-BGA"
+[1] "MESO-BGC"
+Rows: 8342141 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-BLCA"
+[1] "MESO-BM"
+[1] "MESO-BRCA"
+Rows: 7658504 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-CESC"
+[1] "MESO-CML"
+[1] "MESO-CORP"
+[1] "MESO-CRC"
+Rows: 7113115 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-DLBC"
+[1] "MESO-ESCA"
+[1] "MESO-EYAD"
+[1] "MESO-GSS"
+[1] "MESO-HL"
+[1] "MESO-HNSC"
+[1] "MESO-kidney"
+Rows: 8341975 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-LIHC"
+[1] "MESO-LL"
+[1] "MESO-lung"
+Rows: 6840350 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-MCL"
+[1] "MESO-MESO"
+[1] "MESO-MM"
+[1] "MESO-MS"
+[1] "MESO-MZBL"
+Rows: 8342373 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-OV"
+[1] "MESO-PAAD"
+[1] "MESO-PRAD"
+Rows: 7944774 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-SCC"
+Rows: 8341705 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-SI"
+[1] "MESO-SKCM"
+Rows: 8341539 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-STAD"
+[1] "MESO-TEST"
+[1] "MESO-THCA"
+Rows: 8341850 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MESO, a2.MESO
+dbl (3): hg19chr.MESO, bp.MESO, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MESO-UCEC"
+[1] "MESO-VULVA"
+[1] "MM-AML"
+[1] "MM-BAC"
+[1] "MM-BCC"
+[1] "MM-BGA"
+[1] "MM-BGC"
+[1] "MM-BLCA"
+[1] "MM-BM"
+[1] "MM-BRCA"
+Rows: 7658405 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-CESC"
+[1] "MM-CML"
+[1] "MM-CORP"
+[1] "MM-CRC"
+Rows: 7113032 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-DLBC"
+[1] "MM-ESCA"
+[1] "MM-EYAD"
+[1] "MM-GSS"
+[1] "MM-HL"
+[1] "MM-HNSC"
+[1] "MM-kidney"
+[1] "MM-LIHC"
+[1] "MM-LL"
+[1] "MM-lung"
+Rows: 6840267 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-MCL"
+[1] "MM-MESO"
+[1] "MM-MM"
+[1] "MM-MS"
+Rows: 8342275 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-MZBL"
+[1] "MM-OV"
+Rows: 7451764 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-PAAD"
+[1] "MM-PRAD"
+Rows: 7944692 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-SCC"
+[1] "MM-SI"
+[1] "MM-SKCM"
+Rows: 8341484 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-STAD"
+[1] "MM-TEST"
+[1] "MM-THCA"
+Rows: 8341764 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MM, a2.MM
+dbl (3): hg19chr.MM, bp.MM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MM-UCEC"
+[1] "MM-VULVA"
+[1] "MS-AML"
+[1] "MS-BAC"
+[1] "MS-BCC"
+[1] "MS-BGA"
+[1] "MS-BGC"
+[1] "MS-BLCA"
+[1] "MS-BM"
+[1] "MS-BRCA"
+Rows: 7658448 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-CESC"
+[1] "MS-CML"
+[1] "MS-CORP"
+[1] "MS-CRC"
+Rows: 7113039 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-DLBC"
+[1] "MS-ESCA"
+[1] "MS-EYAD"
+[1] "MS-GSS"
+[1] "MS-HL"
+[1] "MS-HNSC"
+[1] "MS-kidney"
+[1] "MS-LIHC"
+[1] "MS-LL"
+[1] "MS-lung"
+Rows: 6840272 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-MCL"
+[1] "MS-MESO"
+[1] "MS-MM"
+[1] "MS-MS"
+[1] "MS-MZBL"
+[1] "MS-OV"
+Rows: 7451795 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-PAAD"
+Rows: 8342190 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-PRAD"
+Rows: 7944713 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-SCC"
+Rows: 8341732 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-SI"
+[1] "MS-SKCM"
+Rows: 8341505 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-STAD"
+[1] "MS-TEST"
+[1] "MS-THCA"
+Rows: 8341854 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MS, a2.MS
+dbl (3): hg19chr.MS, bp.MS, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MS-UCEC"
+[1] "MS-VULVA"
+[1] "MZBL-AML"
+[1] "MZBL-BAC"
+[1] "MZBL-BCC"
+[1] "MZBL-BGA"
+[1] "MZBL-BGC"
+Rows: 8342170 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-BLCA"
+[1] "MZBL-BM"
+[1] "MZBL-BRCA"
+Rows: 7658444 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-CESC"
+[1] "MZBL-CML"
+[1] "MZBL-CORP"
+[1] "MZBL-CRC"
+Rows: 7113039 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-DLBC"
+[1] "MZBL-ESCA"
+[1] "MZBL-EYAD"
+[1] "MZBL-GSS"
+[1] "MZBL-HL"
+[1] "MZBL-HNSC"
+[1] "MZBL-kidney"
+[1] "MZBL-LIHC"
+[1] "MZBL-LL"
+[1] "MZBL-lung"
+Rows: 6840281 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-MCL"
+[1] "MZBL-MESO"
+[1] "MZBL-MM"
+[1] "MZBL-MS"
+[1] "MZBL-MZBL"
+[1] "MZBL-OV"
+Rows: 7451779 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-PAAD"
+[1] "MZBL-PRAD"
+Rows: 7944707 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-SCC"
+Rows: 8341708 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-SI"
+[1] "MZBL-SKCM"
+Rows: 8341502 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-STAD"
+Rows: 8342147 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-TEST"
+[1] "MZBL-THCA"
+Rows: 8341834 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.MZBL, a2.MZBL
+dbl (3): hg19chr.MZBL, bp.MZBL, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "MZBL-UCEC"
+[1] "MZBL-VULVA"
+[1] "OV-AML"
+[1] "OV-BAC"
+[1] "OV-BCC"
+[1] "OV-BGA"
+[1] "OV-BGC"
+[1] "OV-BLCA"
+[1] "OV-BM"
+[1] "OV-BRCA"
+[1] "OV-CESC"
+[1] "OV-CML"
+[1] "OV-CORP"
+[1] "OV-CRC"
+[1] "OV-DLBC"
+[1] "OV-ESCA"
+[1] "OV-EYAD"
+[1] "OV-GSS"
+[1] "OV-HL"
+[1] "OV-HNSC"
+[1] "OV-kidney"
+[1] "OV-LIHC"
+[1] "OV-LL"
+[1] "OV-lung"
+[1] "OV-MCL"
+[1] "OV-MESO"
+[1] "OV-MM"
+[1] "OV-MS"
+[1] "OV-MZBL"
+[1] "OV-OV"
+[1] "OV-PAAD"
+Rows: 7451884 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.OV, a2.OV
+dbl (3): hg19chr.OV, bp.OV, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "OV-PRAD"
+Rows: 8502137 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.OV, a2.OV
+dbl (3): hg19chr.OV, bp.OV, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "OV-SCC"
+[1] "OV-SI"
+[1] "OV-SKCM"
+Rows: 7451647 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.OV, a2.OV
+dbl (3): hg19chr.OV, bp.OV, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "OV-STAD"
+[1] "OV-TEST"
+[1] "OV-THCA"
+[1] "OV-UCEC"
+Rows: 8367095 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.OV, a2.OV
+dbl (3): hg19chr.OV, bp.OV, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "OV-VULVA"
+[1] "PAAD-AML"
+[1] "PAAD-BAC"
+[1] "PAAD-BCC"
+[1] "PAAD-BGA"
+[1] "PAAD-BGC"
+[1] "PAAD-BLCA"
+[1] "PAAD-BM"
+[1] "PAAD-BRCA"
+[1] "PAAD-CESC"
+[1] "PAAD-CML"
+[1] "PAAD-CORP"
+[1] "PAAD-CRC"
+[1] "PAAD-DLBC"
+[1] "PAAD-ESCA"
+[1] "PAAD-EYAD"
+[1] "PAAD-GSS"
+[1] "PAAD-HL"
+[1] "PAAD-HNSC"
+[1] "PAAD-kidney"
+[1] "PAAD-LIHC"
+[1] "PAAD-LL"
+[1] "PAAD-lung"
+[1] "PAAD-MCL"
+[1] "PAAD-MESO"
+[1] "PAAD-MM"
+[1] "PAAD-MS"
+[1] "PAAD-MZBL"
+[1] "PAAD-OV"
+[1] "PAAD-PAAD"
+[1] "PAAD-PRAD"
+Rows: 7944814 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.PAAD, a2.PAAD
+dbl (3): hg19chr.PAAD, bp.PAAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "PAAD-SCC"
+[1] "PAAD-SI"
+[1] "PAAD-SKCM"
+Rows: 8341413 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.PAAD, a2.PAAD
+dbl (3): hg19chr.PAAD, bp.PAAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "PAAD-STAD"
+[1] "PAAD-TEST"
+[1] "PAAD-THCA"
+[1] "PAAD-UCEC"
+Rows: 7385665 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.PAAD, a2.PAAD
+dbl (3): hg19chr.PAAD, bp.PAAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "PAAD-VULVA"
+[1] "PRAD-AML"
+[1] "PRAD-BAC"
+[1] "PRAD-BCC"
+[1] "PRAD-BGA"
+[1] "PRAD-BGC"
+[1] "PRAD-BLCA"
+[1] "PRAD-BM"
+[1] "PRAD-BRCA"
+[1] "PRAD-CESC"
+[1] "PRAD-CML"
+[1] "PRAD-CORP"
+[1] "PRAD-CRC"
+[1] "PRAD-DLBC"
+[1] "PRAD-ESCA"
+[1] "PRAD-EYAD"
+[1] "PRAD-GSS"
+[1] "PRAD-HL"
+[1] "PRAD-HNSC"
+[1] "PRAD-kidney"
+[1] "PRAD-LIHC"
+[1] "PRAD-LL"
+[1] "PRAD-lung"
+[1] "PRAD-MCL"
+[1] "PRAD-MESO"
+[1] "PRAD-MM"
+[1] "PRAD-MS"
+[1] "PRAD-MZBL"
+[1] "PRAD-OV"
+[1] "PRAD-PAAD"
+[1] "PRAD-PRAD"
+[1] "PRAD-SCC"
+[1] "PRAD-SI"
+[1] "PRAD-SKCM"
+Rows: 7944523 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.PRAD, a2.PRAD
+dbl (3): hg19chr.PRAD, bp.PRAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "PRAD-STAD"
+[1] "PRAD-TEST"
+[1] "PRAD-THCA"
+[1] "PRAD-UCEC"
+Rows: 8395758 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.PRAD, a2.PRAD
+dbl (3): hg19chr.PRAD, bp.PRAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "PRAD-VULVA"
+[1] "SCC-AML"
+[1] "SCC-BAC"
+[1] "SCC-BCC"
+[1] "SCC-BGA"
+[1] "SCC-BGC"
+Rows: 8341591 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-BLCA"
+Rows: 8341610 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-BM"
+[1] "SCC-BRCA"
+Rows: 7658534 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-CESC"
+[1] "SCC-CML"
+[1] "SCC-CORP"
+[1] "SCC-CRC"
+Rows: 7113105 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-DLBC"
+Rows: 8341615 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-ESCA"
+Rows: 7213706 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-EYAD"
+[1] "SCC-GSS"
+[1] "SCC-HL"
+[1] "SCC-HNSC"
+Rows: 8341613 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-kidney"
+Rows: 8341537 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-LIHC"
+[1] "SCC-LL"
+[1] "SCC-lung"
+Rows: 6840336 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-MCL"
+[1] "SCC-MESO"
+[1] "SCC-MM"
+[1] "SCC-MS"
+[1] "SCC-MZBL"
+[1] "SCC-OV"
+Rows: 7451874 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-PAAD"
+Rows: 8341647 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-PRAD"
+Rows: 7944745 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-SCC"
+[1] "SCC-SI"
+Rows: 8341670 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-SKCM"
+Rows: 8341222 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-STAD"
+Rows: 8341640 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-TEST"
+Rows: 8332526 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-THCA"
+Rows: 8341397 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-UCEC"
+Rows: 7385643 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SCC-VULVA"
+Rows: 8334879 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SCC, a2.SCC
+dbl (3): hg19chr.SCC, bp.SCC, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-AML"
+[1] "SI-BAC"
+[1] "SI-BCC"
+[1] "SI-BGA"
+[1] "SI-BGC"
+[1] "SI-BLCA"
+[1] "SI-BM"
+[1] "SI-BRCA"
+Rows: 7658452 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-CESC"
+[1] "SI-CML"
+[1] "SI-CORP"
+[1] "SI-CRC"
+Rows: 7113058 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-DLBC"
+[1] "SI-ESCA"
+[1] "SI-EYAD"
+[1] "SI-GSS"
+[1] "SI-HL"
+[1] "SI-HNSC"
+[1] "SI-kidney"
+[1] "SI-LIHC"
+[1] "SI-LL"
+[1] "SI-lung"
+Rows: 6840313 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-MCL"
+[1] "SI-MESO"
+[1] "SI-MM"
+[1] "SI-MS"
+[1] "SI-MZBL"
+[1] "SI-OV"
+Rows: 7451801 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-PAAD"
+[1] "SI-PRAD"
+Rows: 7944717 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-SCC"
+[1] "SI-SI"
+[1] "SI-SKCM"
+Rows: 8341474 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-STAD"
+[1] "SI-TEST"
+[1] "SI-THCA"
+Rows: 8341769 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SI, a2.SI
+dbl (3): hg19chr.SI, bp.SI, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SI-UCEC"
+[1] "SI-VULVA"
+[1] "SKCM-AML"
+[1] "SKCM-BAC"
+[1] "SKCM-BCC"
+[1] "SKCM-BGA"
+[1] "SKCM-BGC"
+[1] "SKCM-BLCA"
+[1] "SKCM-BM"
+[1] "SKCM-BRCA"
+[1] "SKCM-CESC"
+[1] "SKCM-CML"
+[1] "SKCM-CORP"
+[1] "SKCM-CRC"
+[1] "SKCM-DLBC"
+[1] "SKCM-ESCA"
+[1] "SKCM-EYAD"
+[1] "SKCM-GSS"
+[1] "SKCM-HL"
+[1] "SKCM-HNSC"
+[1] "SKCM-kidney"
+[1] "SKCM-LIHC"
+[1] "SKCM-LL"
+[1] "SKCM-lung"
+[1] "SKCM-MCL"
+[1] "SKCM-MESO"
+[1] "SKCM-MM"
+[1] "SKCM-MS"
+[1] "SKCM-MZBL"
+[1] "SKCM-OV"
+[1] "SKCM-PAAD"
+[1] "SKCM-PRAD"
+[1] "SKCM-SCC"
+[1] "SKCM-SI"
+[1] "SKCM-SKCM"
+[1] "SKCM-STAD"
+[1] "SKCM-TEST"
+[1] "SKCM-THCA"
+[1] "SKCM-UCEC"
+Rows: 7385449 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.SKCM, a2.SKCM
+dbl (3): hg19chr.SKCM, bp.SKCM, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "SKCM-VULVA"
+[1] "STAD-AML"
+[1] "STAD-BAC"
+[1] "STAD-BCC"
+[1] "STAD-BGA"
+[1] "STAD-BGC"
+[1] "STAD-BLCA"
+Rows: 8341946 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-BM"
+[1] "STAD-BRCA"
+Rows: 7658609 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-CESC"
+[1] "STAD-CML"
+[1] "STAD-CORP"
+[1] "STAD-CRC"
+[1] "STAD-DLBC"
+[1] "STAD-ESCA"
+[1] "STAD-EYAD"
+[1] "STAD-GSS"
+[1] "STAD-HL"
+[1] "STAD-HNSC"
+Rows: 8341910 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-kidney"
+[1] "STAD-LIHC"
+[1] "STAD-LL"
+[1] "STAD-lung"
+Rows: 6840442 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-MCL"
+[1] "STAD-MESO"
+[1] "STAD-MM"
+[1] "STAD-MS"
+[1] "STAD-MZBL"
+[1] "STAD-OV"
+Rows: 7451961 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-PAAD"
+Rows: 8342018 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-PRAD"
+Rows: 7944876 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-SCC"
+[1] "STAD-SI"
+[1] "STAD-SKCM"
+Rows: 8341414 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-STAD"
+[1] "STAD-TEST"
+[1] "STAD-THCA"
+Rows: 8341734 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-UCEC"
+Rows: 7385749 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.STAD, a2.STAD
+dbl (3): hg19chr.STAD, bp.STAD, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "STAD-VULVA"
+[1] "TEST-AML"
+[1] "TEST-BAC"
+[1] "TEST-BCC"
+[1] "TEST-BGA"
+[1] "TEST-BGC"
+[1] "TEST-BLCA"
+[1] "TEST-BM"
+[1] "TEST-BRCA"
+Rows: 7660823 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-CESC"
+[1] "TEST-CML"
+[1] "TEST-CORP"
+[1] "TEST-CRC"
+Rows: 7115094 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-DLBC"
+[1] "TEST-ESCA"
+Rows: 7215716 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-EYAD"
+[1] "TEST-GSS"
+[1] "TEST-HL"
+[1] "TEST-HNSC"
+Rows: 8332589 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-kidney"
+[1] "TEST-LIHC"
+[1] "TEST-LL"
+[1] "TEST-lung"
+Rows: 6842410 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-MCL"
+[1] "TEST-MESO"
+[1] "TEST-MM"
+[1] "TEST-MS"
+[1] "TEST-MZBL"
+[1] "TEST-OV"
+Rows: 7454184 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-PAAD"
+[1] "TEST-PRAD"
+Rows: 7947076 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-SCC"
+[1] "TEST-SI"
+[1] "TEST-SKCM"
+Rows: 8332262 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-STAD"
+Rows: 8332633 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-TEST"
+[1] "TEST-THCA"
+Rows: 8332384 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-UCEC"
+Rows: 7387917 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "TEST-VULVA"
+Rows: 8324944 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.TEST, a2.TEST
+dbl (3): hg19chr.TEST, bp.TEST, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-AML"
+[1] "THCA-BAC"
+[1] "THCA-BCC"
+[1] "THCA-BGA"
+[1] "THCA-BGC"
+[1] "THCA-BLCA"
+Rows: 8341619 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-BM"
+[1] "THCA-BRCA"
+Rows: 7658384 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-CESC"
+[1] "THCA-CML"
+[1] "THCA-CORP"
+[1] "THCA-CRC"
+[1] "THCA-DLBC"
+[1] "THCA-ESCA"
+[1] "THCA-EYAD"
+[1] "THCA-GSS"
+[1] "THCA-HL"
+[1] "THCA-HNSC"
+Rows: 8341610 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-kidney"
+Rows: 8341572 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-LIHC"
+[1] "THCA-LL"
+[1] "THCA-lung"
+Rows: 6840227 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-MCL"
+[1] "THCA-MESO"
+[1] "THCA-MM"
+[1] "THCA-MS"
+[1] "THCA-MZBL"
+[1] "THCA-OV"
+Rows: 7451727 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-PAAD"
+Rows: 8341744 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-PRAD"
+Rows: 7944617 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-SCC"
+[1] "THCA-SI"
+[1] "THCA-SKCM"
+Rows: 8341118 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-STAD"
+[1] "THCA-TEST"
+[1] "THCA-THCA"
+[1] "THCA-UCEC"
+Rows: 7385518 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.THCA, a2.THCA
+dbl (3): hg19chr.THCA, bp.THCA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "THCA-VULVA"
+[1] "UCEC-AML"
+[1] "UCEC-BAC"
+[1] "UCEC-BCC"
+[1] "UCEC-BGA"
+[1] "UCEC-BGC"
+[1] "UCEC-BLCA"
+[1] "UCEC-BM"
+[1] "UCEC-BRCA"
+[1] "UCEC-CESC"
+[1] "UCEC-CML"
+[1] "UCEC-CORP"
+[1] "UCEC-CRC"
+[1] "UCEC-DLBC"
+[1] "UCEC-ESCA"
+[1] "UCEC-EYAD"
+[1] "UCEC-GSS"
+[1] "UCEC-HL"
+[1] "UCEC-HNSC"
+[1] "UCEC-kidney"
+[1] "UCEC-LIHC"
+[1] "UCEC-LL"
+[1] "UCEC-lung"
+[1] "UCEC-MCL"
+[1] "UCEC-MESO"
+[1] "UCEC-MM"
+[1] "UCEC-MS"
+[1] "UCEC-MZBL"
+[1] "UCEC-OV"
+[1] "UCEC-PAAD"
+[1] "UCEC-PRAD"
+[1] "UCEC-SCC"
+[1] "UCEC-SI"
+[1] "UCEC-SKCM"
+[1] "UCEC-STAD"
+[1] "UCEC-TEST"
+[1] "UCEC-THCA"
+[1] "UCEC-UCEC"
+[1] "UCEC-VULVA"
+[1] "VULVA-AML"
+[1] "VULVA-BAC"
+[1] "VULVA-BCC"
+[1] "VULVA-BGA"
+[1] "VULVA-BGC"
+[1] "VULVA-BLCA"
+[1] "VULVA-BM"
+[1] "VULVA-BRCA"
+Rows: 7656545 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.VULVA, a2.VULVA
+dbl (3): hg19chr.VULVA, bp.VULVA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "VULVA-CESC"
+[1] "VULVA-CML"
+[1] "VULVA-CORP"
+[1] "VULVA-CRC"
+Rows: 7111747 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.VULVA, a2.VULVA
+dbl (3): hg19chr.VULVA, bp.VULVA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "VULVA-DLBC"
+[1] "VULVA-ESCA"
+[1] "VULVA-EYAD"
+[1] "VULVA-GSS"
+[1] "VULVA-HL"
+[1] "VULVA-HNSC"
+[1] "VULVA-kidney"
+[1] "VULVA-LIHC"
+[1] "VULVA-LL"
+[1] "VULVA-lung"
+Rows: 6838788 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.VULVA, a2.VULVA
+dbl (3): hg19chr.VULVA, bp.VULVA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "VULVA-MCL"
+[1] "VULVA-MESO"
+[1] "VULVA-MM"
+[1] "VULVA-MS"
+[1] "VULVA-MZBL"
+[1] "VULVA-OV"
+[1] "VULVA-PAAD"
+[1] "VULVA-PRAD"
+Rows: 7942697 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.VULVA, a2.VULVA
+dbl (3): hg19chr.VULVA, bp.VULVA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "VULVA-SCC"
+[1] "VULVA-SI"
+[1] "VULVA-SKCM"
+Rows: 8334610 Columns: 6
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (3): snpid, a1.VULVA, a2.VULVA
+dbl (3): hg19chr.VULVA, bp.VULVA, p.placo
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+[1] "VULVA-STAD"
+[1] "VULVA-TEST"
+[1] "VULVA-THCA"
+[1] "VULVA-UCEC"
+[1] "VULVA-VULVA"

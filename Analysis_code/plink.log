@@ -1,0 +1,25 @@
+PLINK v1.90b7.1 64-bit (18 Oct 2023)
+Options in effect:
+  --bfile /home/yanyq/share_genetics/data/UKB_multi_cancer/genotype/BRCA_all
+  --extract /home/yanyq/share_genetics/result/PLACO/sigUnique_SNP/sig_BRCA-OV
+  --score /home/yanyq/share_genetics/result/PRS/BRCA-OV_beta 1 4 23 header
+
+Hostname: yyb-RS720A-E12-RS12
+Working directory: /home/yanyq/share_genetics/pipeline/code
+Start time: Tue Mar 19 21:48:36 2024
+
+Random number seed: 1710856116
+1547734 MB RAM detected; reserving 773867 MB for main workspace.
+4414 variants loaded from .bim file.
+17417 people (90 males, 17327 females) loaded from .fam.
+--extract: 4400 variants remaining.
+Warning: At least 14 duplicate IDs in --extract file.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 17417 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.975876.
+4400 variants and 17417 people pass filters and QC.
+Note: No phenotypes present.
+Error: No valid entries in --score file.
+
+End time: Tue Mar 19 21:48:37 2024

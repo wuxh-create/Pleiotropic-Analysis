@@ -1,0 +1,182 @@
+---
+title: "2.2.GWAS_cancer_SNP.md"
+output: html_document
+date: "2024-09-19"
+---
+
+从GWAS catalog下载了所有top的关联（GWAS catalog检索性状得到的表格给的也是top关联，非top的只有summary数据里有）
+下载时间：2024.7.25
+点击了MAPPED_TRAIT_URI里所有的连接，筛选cancer or benign分类下的性状
+
+```{r}
+library(readr)
+library(tidyverse)
+top_asso = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-associations_e112_r2024-07-08.tsv"))
+top_asso$row_num = 1:nrow(top_asso)
+top_asso_num = top_asso[, c("row_num","MAPPED_TRAIT_URI")]
+# 拆分逗号分割的列，获取所有本体的链接
+top_asso_num =  top_asso_num %>%
+  separate_rows(MAPPED_TRAIT_URI, sep = ", ")
+write_tsv(as.data.frame(unique(top_asso_num$MAPPED_TRAIT_URI)), "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2_ontology_URI", col_names = F)
+# 筛选后的cancer ontology
+cancer_ontology = as.data.frame(read.table("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_or_benign_ontology.txt", header = F))
+# C: cancer; H: hematopoietic and lymphoid system neoplasm; S: nervous system disease; U: neoplasm，不确定恶性还是良性; N: 非癌（息肉、纤维化、肝硬化）
+
+top_asso_cancer = top_asso_num[top_asso_num$MAPPED_TRAIT_URI%in%cancer_ontology$V1[cancer_ontology$V2!="N"],]
+top_asso_cancer = top_asso[unique(top_asso_cancer$row_num),]
+write_tsv(top_asso_cancer, "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer.txt")
+
+{# SNP筛选
+  top_asso_cancer = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer.txt"))
+  top_asso_cancer = top_asso_cancer[!is.na(top_asso_cancer$CHR_ID),]
+  # ID 为9;9;9;9;9;9;9;9;9;9;9;9;9;9;9，一行包含了多个SNP
+  top_asso_cancer = top_asso_cancer[!grepl(";", top_asso_cancer$SNPS),]
+  # 上位性
+  top_asso_cancer = top_asso_cancer[!grepl("x", top_asso_cancer$SNPS),]
+  top_asso_cancer = top_asso_cancer[top_asso_cancer$CHR_ID!="X",]
+  top_asso_cancer$CHR_ID = as.numeric(top_asso_cancer$CHR_ID)
+  top_asso_cancer$CHR_POS = as.numeric(top_asso_cancer$CHR_POS)
+  write_tsv(top_asso_cancer,"/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_SNPIDfiltered.txt")
+  cancer_SNP = unique(top_asso_cancer[,c("SNPS", "CHR_ID", "CHR_POS", "REGION")])
+  # # GWASlab注释癌症SNP坐标，能注释到坐标，说明dbsnp156里面有这个SNP
+  # #######################gwaslab
+  cancer_SNP_tmp = cancer_SNP[,1:3]
+  cancer_SNP_tmp[,2:3] = NA
+  colnames(cancer_SNP_tmp) = c("SNP","chr","pos")
+  write_tsv(cancer_SNP_tmp, "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancerSNP_beforeGL.txt")
+}
+```
+```{bash}
+import gwaslab as gl
+mysumstats = gl.Sumstats("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancerSNP_beforeGL.txt", snpid="SNP",chrom = "chr",pos = "pos")
+mysumstats.data['rsID'] = mysumstats.data['SNPID']
+mysumstats.data['CHR'] = mysumstats.data['CHR'].astype('Int64')
+mysumstats.data['POS'] = mysumstats.data['POS'].astype('Int64')
+mysumstats.data['CHR'].dtypes
+mysumstats.data['POS'].dtypes
+mysumstats.rsid_to_chrpos2(path="/home/yanyq/software/rsidmap/dbsnp/GCF_000001405.25.gz.rsID_CHR_POS_groups_20000000.h5")
+mysumstats.data.to_csv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancerSNP_afterGL.txt",header = True, index = False, sep = "\t")
+# ##############################
+}
+```
+```{r}
+# 没有注释到坐标的去dbsnp里面查，然后根据坐标用rsidmap注释id
+f = read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancerSNP_afterGL.txt")
+write_tsv(as.data.frame(paste(unique(f$SNPID[f$STATUS==9995999]), collapse = " OR ")), "~/tmp", col_names = F) 
+dbsnp = unique(as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/dbsnp_search_res.txt")))
+dbsnp$uid = paste0("rs", dbsnp$uid)
+f = merge(f,dbsnp, by.x = "SNPID", by.y = "uid")
+f = tidyr::separate(f,col = "SPDI", into = "ID", sep = ",")
+f = tidyr::separate(f,col = "ID", into = c("chr","pos","ref","alt"), sep = ":")
+f = tidyr::separate(f,col = "CHRPOS_PREV_ASSM", into = c("chr_hg19","pos_hg19"),sep = ":")
+write_tsv(f, "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwaslab_dbsnp")
+write_tsv(f[,10:13], "/home/yanyq/data/gwas_catalog_v1.0.2-associations/rsidmap_input")
+```
+```{bash}
+# 2个没注释到id
+cd ~/software/rsidmap
+python3  ./code/rsidmap.py --build hg19 --chr_col chr_hg19 --pos_col pos_hg19 --ref_col  ref --alt_col alt --file_gwas /home/yanyq/data/gwas_catalog_v1.0.2-associations/rsidmap_input --file_out /home/yanyq/data/gwas_catalog_v1.0.2-associations/rsidmap_output
+```
+```{r}
+top_asso_cancer = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_SNPIDfiltered.txt"))
+rsidmap = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/rsidmap_output"))
+gl_dbsnp = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwaslab_dbsnp"))
+gl_dbsnp_rsidmap = cbind(gl_dbsnp, rsidmap)
+which(gl_dbsnp_rsidmap[,13]!=gl_dbsnp_rsidmap[,17])
+# 癌症SNP ID：
+# 1. gwaslab中注释到位置的，rsid可用,8497个
+# 2. 没有注释到位置，dbsnp检索位置（74个未检索到），rsidmap注释id，45个，2个无hg19坐标，即43个
+gl = read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancerSNP_afterGL.txt")
+write_tsv(as.data.frame(unique(c(gl$SNPID[gl$STATUS==9990999],gl_dbsnp_rsidmap$SNP[grep("rs",gl_dbsnp_rsidmap$SNP)]))),"/home/yanyq/data/gwas_catalog_v1.0.2-associations/cancer_snps_dbsnp156", col_names = F)
+
+# 更新top association中的SNPID
+top_asso_cancer = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_SNPIDfiltered.txt"))
+gl = read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancerSNP_afterGL.txt")
+gl = gl[gl$STATUS==9990999,] # gwaslab能注释到坐标，表明ID是正确的
+which(gl$SNPID!=gl$rsID)
+top_asso_cancer$SNPID_dbsnp156 = NA
+top_asso_cancer$SNPID_dbsnp156[top_asso_cancer$SNPS%in%gl$SNPID] = top_asso_cancer$SNPS[top_asso_cancer$SNPS%in%gl$SNPID]
+# 其他的根据hg38坐标注释或检索到的rsid以及坐标
+rsidmap = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/rsidmap_output"))
+gl_dbsnp = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwaslab_dbsnp"))
+gl_dbsnp_rsidmap = cbind(gl_dbsnp, rsidmap)
+which(gl_dbsnp_rsidmap[,13]!=gl_dbsnp_rsidmap[,17])
+which(duplicated(gl_dbsnp_rsidmap$SNP))
+tmp = top_asso_cancer[top_asso_cancer$SNPS%in%gl_dbsnp_rsidmap$SNPID,]
+tmp = dplyr::left_join(tmp, gl_dbsnp_rsidmap[,c(1,18)], by = c("SNPS"="SNPID"))
+top_asso_cancer$SNPID_dbsnp156[top_asso_cancer$SNPS%in%gl_dbsnp_rsidmap$SNPID] = tmp$SNP
+# 对于unique的snpid:chr:pos有重复的snpid，这是由于原来的GWAS catalog中rsid和基因组坐标不对应导致的
+# # rs11445081 10 111793285
+# rs3094604 7 121654546
+# rs3131856 7 129549809
+# rs9267123 7 114625426
+# 四个位点，五个关联
+top_asso_cancer = top_asso_cancer[!paste0(top_asso_cancer$SNPID_dbsnp156,top_asso_cancer$CHR_ID,top_asso_cancer$CHR_POS)%in%c("rs1144508110111793285","rs30946047121654546","rs31318567129549809","rs92671237114625426"),]
+write_tsv(top_asso_cancer, "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_dbsnp156")
+
+# 给top assoc人工分类癌症
+write_tsv(as.data.frame(unique(top_asso_cancer$MAPPED_TRAIT)), "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancertrait",col_names = F)
+trait_map = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancertrait-mapped"))
+trait_map = trait_map[!is.na(trait_map$trait),]
+top_asso_cancer = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_dbsnp156"))
+top_asso_cancer = top_asso_cancer[,c("SNPID_dbsnp156", "P-VALUE", "OR or BETA", "MAPPED_TRAIT")]
+top_asso_cancer = top_asso_cancer[top_asso_cancer$`P-VALUE`<5e-8,]
+nrow(unique(top_asso_cancer))
+length(unique(top_asso_cancer$SNPID_dbsnp156))
+top_asso_cancer = merge(top_asso_cancer, trait_map, by = "MAPPED_TRAIT")
+nrow(unique(top_asso_cancer[,-6]))
+write_tsv(top_asso_cancer, "/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_dbsnp156_traitMapped")
+
+# PLACO中的SNP， catalog读错了文件，这里包含了P值不显著的关联
+# all_PLACO = as.data.frame(read_tsv("/home/yanyq/share_genetics/result/PLACO/all"))
+# catalog = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/cancer_snps_dbsnp156", col_names = F))
+# # 收集数据中GWAS显著的SNP
+# sigGWAS = list()
+# setwd("/home/yanyq/share_genetics/data/GWAS/processed/")
+# for(i in list.files()){
+#   f = read_tsv(i)
+#   sigGWAS[[i]] = f[f$pval<5e-8,]
+#   sigGWAS[[i]]$trait = gsub(".gz","",i)
+# }
+# write_tsv(do.call(rbind, sigGWAS), file = "/home/yanyq/share_genetics/data/GWAS/processed/sigGWAS")
+# write_tsv(as.data.frame(unique(c(all_PLACO$snpid, catalog$X1,do.call(rbind, sigGWAS)$snpid))), "/home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_input", col_names = F)
+all_PLACO = as.data.frame(read_tsv("/home/yanyq/share_genetics/result/PLACO/all"))
+catalog = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_dbsnp156_traitMapped"))
+# 收集数据中GWAS显著的SNP，数据已保存，不用再跑
+{
+  # sigGWAS = list()
+  # setwd("/home/yanyq/share_genetics/data/GWAS/processed/")
+  # for(i in list.files()){
+  #   f = read_tsv(i)
+  #   sigGWAS[[i]] = f[f$pval<5e-8,]
+  #   sigGWAS[[i]]$trait = gsub(".gz","",i)
+  # }
+  # write_tsv(do.call(rbind, sigGWAS), file = "/home/yanyq/share_genetics/data/GWAS/processed/sigGWAS")
+}
+sigGWAS = as.data.frame(read_tsv("/home/yanyq/share_genetics/data/GWAS/processed/sigGWAS"))
+# write_tsv(as.data.frame(unique(c(all_PLACO$snpid, catalog$X1,do.call(rbind, sigGWAS)$snpid))), "/home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_input", col_names = F)
+write_tsv(as.data.frame(unique(c(all_PLACO$snpid, catalog$SNPID_dbsnp156,sigGWAS$snpid))), "/home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_input", col_names = F)
+
+```
+
+```{bash}
+# plink 计算LD
+plink --bfile /home/yanyq/share_genetics/data/MAGMA/g1000_eur/g1000_eur --extract /home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_input --r2 --ld-window-kb 500 --ld-window-r2 0.5 --ld-snp-list /home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_input --out /home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_output_LD_0.5
+```
+
+```{r}
+# 注释是否为GWAS SNP
+LD = as.data.frame(read.table("/home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_output_LD_0.5.ld", header = T))
+# 显著的SNP
+catalog = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_dbsnp156"))
+catalog = catalog[catalog$`P-VALUE`<5e-8,]
+catalog_mappedTrait = as.data.frame(read_tsv("/home/yanyq/data/gwas_catalog_v1.0.2-associations/gwas_catalog_v1.0.2-cancer_dbsnp156_traitMapped", col_names = T))
+sig_GWAS = as.data.frame(read_tsv("/home/yanyq/share_genetics/data/GWAS/processed/sigGWAS"))
+# 检查是否有显著的SNP没有计算ld
+tmp = as.data.frame(read_tsv("/home/yanyq/share_genetics/result/GWAS_cancer_LD/plink_input",col_names = F))
+tmp2 = unique(c(sig_GWAS$snpid,catalog_mappedTrait$SNPID_dbsnp156))
+unique(tmp2[!(tmp2%in%tmp$X1)])
+tmp2 = unique(c(sig_GWAS$snpid,catalog$SNPID_dbsnp156))
+unique(tmp2[!(tmp2%in%tmp$X1)])
+
+```

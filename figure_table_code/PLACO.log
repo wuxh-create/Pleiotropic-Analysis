@@ -1,0 +1,20 @@
+nohup: ignoring input
+Loading required package: Rcpp
+
+Attaching package: ‘GPA’
+
+The following object is masked from ‘package:stats’:
+
+    cov
+
+============================================================
+                  PLACO v0.1.1 is loaded
+============================================================
+If you use this software, please cite:
+Ray et al.(2020) A powerful method for pleiotropic analysis
+    under composite null hypothesis identifies novel shared
+    loci between type 2 diabetes and prostate cancer.
+    BioRxiv https://doi.org/10.1101/2020.04.11.037630
+------------------------------------------------------------
+
+[1] "exsit unharmonise: UCEC"
