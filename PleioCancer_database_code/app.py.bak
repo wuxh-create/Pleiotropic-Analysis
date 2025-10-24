@@ -1,0 +1,463 @@
+# https://zhuanlan.zhihu.com/p/479086273
+from flask import Flask, jsonify, send_from_directory, request, render_template,send_file
+from flask_cors import CORS
+import pymongo
+
+DEBUG = True
+ 
+app = Flask(__name__)
+app.config.from_object(__name__)
+ 
+CORS(app, resources={r'/*': {'origins': '*'}})
+
+myclient = pymongo.MongoClient(host = "127.0.0.1", port = 27017, username = "yyq", password = "yqx2913196,",authSource = "PLACO") # authorSource指定登录的数据库，默认为admin
+#连接数据库
+mydb = myclient["PLACO"]
+#连接数据库表
+pleiotropicSNP = mydb["pleiotropicSNP"]
+SNP_cancer_db = mydb["SNP_cancer"]
+eQTL = mydb["eQTL"]
+meQTL = mydb["meQTL"]
+pQTL = mydb["pQTL"]
+SMR_eQTL = mydb["SMR_eQTL"]
+SMR_Gene_GWAS = mydb["SMR_Gene_GWAS"]
+SMR_meQTL = mydb["SMR_meQTL"]
+SMR_pQTL = mydb["SMR_pQTL"]
+SMR_meQTL_eQTL = mydb["SMR_meQTL_eQTL"]
+
+
+@app.route("/cancerdb/allSNPs")
+def SNPsShow():
+    # 数据库信息
+    listx = []
+    # 查询数据库, 0表示不返回_id
+    for x in pleiotropicSNP.find({},{"_id":0}):
+        listx.append(x)
+        
+    #将数据库信息转换为Json格式传给前端
+    return jsonify(listx)
+
+# SNPs.vue页面检索SNPs
+@app.route("/cancerdb/filteredSNPs", methods = ["GET", "POST"])
+def searhSNPs():
+    # 返回给前端的数据
+    listx = []
+
+    # 获取前端传来的检索条件
+    filterForm = request.get_json()
+    cancer = filterForm["cancerType"]
+    cancer.sort()
+    SNP = filterForm["searchSNPs"]
+
+    # 检查输入框数据的格式，判断是否合法：以rs开头或者chr:100-200
+    region = SNP.replace("chr","").replace("-",":").split(":") # chr1:100-200，转为[1,100,200]
+    if SNP=="" or SNP.startswith("rs") or (SNP.startswith("chr") and len(region)==3):
+        # rsid查询条件
+        rs_query = {"snpid": {"$regex": SNP}}
+        # 基因组区域查询条件
+        # gte:大于等于, lte:小于等于
+        if len(region)==3:
+            region = [ int(x) for x in region ]
+            region_query = {"hg19chr": region[0], "bp": {"$gte": region[1], "$lte": region[2]}}
+
+        # 开始检索
+        # 检索条件均为空
+        if len(cancer) == 0 and SNP == "":
+            for x in pleiotropicSNP.find({},{"_id":0}):
+                listx.append(x)
+
+        # cancerType为空，searchSNPs不为空
+        elif len(cancer) == 0 and SNP != "":
+            # 用rsID searchSNPs
+            if "rs" in SNP:
+                for x in pleiotropicSNP.find(rs_query, {"_id":0}):
+                    listx.append(x)
+            # 用基因组区间searchSNPs
+            elif "chr" in SNP:
+                for x in pleiotropicSNP.find(region_query, {"_id":0}):
+                    listx.append(x)
+        else:
+            all_pairs = ["Bladder, Breast","Bladder, Head and neck","Bladder, Kidney","Bladder, Lung","Bladder, Ovary","Bladder, Pancreas","Bladder, Prostate","Bladder, Skin melanoma","Bladder, Endometrium",
+            "Breast, Head and neck","Breast, Kidney","Breast, Lung","Breast, Ovary","Breast, Pancreas","Breast, Prostate","Breast, Skin melanoma","Breast, Endometrium",
+            "Head and neck, Kidney","Head and neck, Lung","Head and neck, Ovary","Head and neck, Pancreas","Head and neck, Prostate","Head and neck, Skin melanoma","Head and neck, Endometrium",
+            "Kidney, Lung","Kidney, Ovary","Kidney, Pancreas","Kidney, Prostate","Kidney, Skin melanoma","Kidney, Endometrium",
+            "Lung, Ovary","Lung, Pancreas","Lung, Prostate","Lung, Skin melanoma","Lung, Endometrium",
+            "Ovary, Pancreas","Ovary, Prostate","Ovary, Skin melanoma","Ovary, Endometrium",
+            "Pancreas, Prostate","Pancreas, Skin melanoma","Pancreas, Endometrium",
+            "Prostate, Skin melanoma","Prostate, Endometrium",
+            "Skin melanoma, Endometrium"]
+            # 遍历cancerType分别检索数据库效率太低，直接转换成pairs
+            my_pairs = []
+            # 提取包含cancer的pair
+            if len(cancer) == 1:
+                my_pairs = [i for i in all_pairs if cancer[0] in i]
+            elif len(cancer) == 2:
+                my_pairs = [cancer[0] + ", " + cancer[1]]
+            else:
+                for i in range(0,len(cancer)-1):
+                    for j in range(i+1,len(cancer)):
+                        my_pairs.append(cancer[i] + ", " + cancer[j])
+            # my_pairs=list(set(my_pairs)) # 去重
+            my_pairs.sort()
+            # cancerType查询
+            cancer_query = {"trait_pairs": {"$in": my_pairs}}
+            if "rs" in SNP:
+                cancer_query.update(rs_query) # 拼接两个字典
+            elif "chr" in SNP:
+                cancer_query.update(region_query)
+            for x in pleiotropicSNP.find(cancer_query,{"_id":0}):
+                    listx.append(x)
+        return jsonify(listx)
+    else:
+        return "errorID"
+        
+# SMR_eQTL.vue页面
+@app.route("/cancerdb/SMR_eQTL", methods = ["GET", "POST"])
+def smr_eQTL():
+    # 返回给前端的数据
+    listx = []
+
+    # 获取前端传来的检索条件
+    if request.is_json:
+        filterForm = request.get_json()
+    else:
+        for x in SMR_eQTL.find({},{"_id":0}):
+            listx.append(x)
+        
+    return jsonify(listx)
+
+# SMR_eQTL.vue页面可视化图展示
+@app.route("/cancerdb/SMR_eQTL_fig", methods = ["GET", "POST"])
+def smr_eQTL_fig():
+    # 获取前端传来的检索条件
+    if request.is_json:
+        data_frontEnd = request.get_json()
+        gene = data_frontEnd["gene"]
+        cancer = data_frontEnd["cancer"]
+
+        eQTL_result = []
+        for x in eQTL.find({"GeneSymbol": gene}, {"_id":0}):
+            eQTL_result.append(x)
+
+        gene_start = eQTL_result[1]["GenePos"]-1000000
+        gene_end = eQTL_result[1]["GenePos"]+1000000
+        GWAS_result = []
+        for x in SMR_Gene_GWAS.find({"cancer": cancer, "hg19chr": eQTL_result[1]["GeneChr"], "bp": {"$gte": gene_start, "$lte": gene_end}}, {"_id":0}):
+            GWAS_result.append(x)
+
+        return jsonify({"eQTL_result": eQTL_result, "GWAS_result": GWAS_result})
+
+# SMR_meQTL.vue页面
+@app.route("/cancerdb/SMR_meQTL", methods = ["GET", "POST"])
+def smr_meQTL():
+    # 返回给前端的数据
+    listx = []
+
+    # 获取前端传来的检索条件
+    if request.is_json:
+        filterForm = request.get_json()
+    else:
+        for x in SMR_meQTL.find({},{"_id":0}):
+            listx.append(x)
+        
+    return jsonify(listx)
+
+# SMR_meQTL.vue页面可视化图展示
+@app.route("/cancerdb/SMR_meQTL_fig", methods = ["GET", "POST"])
+def smr_meQTL_fig():
+    # 获取前端传来的检索条件
+    if request.is_json:
+        data_frontEnd = request.get_json()
+        gene = data_frontEnd["gene"]
+        cancer = data_frontEnd["cancer"]
+
+        meQTL_result = []
+        for x in meQTL.find({"GeneSymbol": gene}, {"_id":0}):
+            meQTL_result.append(x)
+
+        gene_start = meQTL_result[1]["GenePos"]-1000000
+        gene_end = meQTL_result[1]["GenePos"]+1000000
+        GWAS_result = []
+        for x in SMR_Gene_GWAS.find({"cancer": cancer, "hg19chr": meQTL_result[1]["GeneChr"], "bp": {"$gte": gene_start, "$lte": gene_end}}, {"_id":0}):
+            GWAS_result.append(x)
+
+        return jsonify({"meQTL_result": meQTL_result, "GWAS_result": GWAS_result})
+
+
+
+# 关系图 { "cancerType": [ "Breast", "Prostate" ], "geneSymbol": "CSK\nTLR1\nMetazoa_SRP", "methy": "cg20801110\ncg13055199", "snp": "rs2290574\nrs4833096\nrs1053732" }
+@app.route("/cancerdb/relationGraph", methods = ["GET", "POST"])
+def relationGraph():
+    # 获取前端传来的检索条件
+    filterForm = request.get_json()
+    # 前端输入的例子
+    filterForm = { "cancerType": [ "Breast", "Prostate" ], "geneSymbol": "CSK\nTLR1\nCLEC11A\nCICP27", "methy": "cg20801110\ncg13055199\ncg13560058", "snp": "rs2290574\nrs4833096\nrs3184504" }    
+    cancers = filterForm["cancerType"]
+    geneSymbol = filterForm["geneSymbol"]
+    methy =  filterForm["methy"]
+    snp = filterForm["snp"]
+    geneSymbol = geneSymbol.split("\n")
+    gene = geneSymbol
+    protein = geneSymbol
+    methy = methy.split("\n")
+    snp = snp.split("\n")
+
+    ################################
+    # 查询SNP和cancer的关系，无重复
+    # SNP为必填
+    # 如果未指定cancer，则取出包含该SNP的所有记录
+    # 后续查询其他分子性状与cancer的关系时，使用与该SNP关联的cancer作为查询条件
+    ################################
+    SNP_cancer = []
+    SNP_cancer_query = {"snpid": {"$in": snp}}
+    if len(cancers)>0:
+        SNP_cancer_query.update({"trait": {"$in": cancers}})
+    for i in SNP_cancer_db.find(SNP_cancer_query, {"_id":0}):
+        SNP_cancer.append(i)
+    if len(cancers)==0:
+        cancers = list(set(item['trait'] for item in SNP_cancer))
+
+    # if len(cancers)>0:
+    #     SNP_cancer_query.update({"$or": [{"trait1": {"$in": cancers}, "trait2": {"$in": cancers}}]})
+    # for i in pleiotropicSNP.find(SNP_cancer_query, {"_id":0}):
+    #     SNP_cancer.append(i)
+    # if len(cancers)==0:
+    #     # 提取键为 'trait1' 和 'trait2' 的值并合并去重
+    #     trait1 = [item['trait1'] for item in SNP_cancer]
+    #     trait2 = [item['trait2'] for item in SNP_cancer]
+    #     # 合并并去重
+    #     cancers = list(set(trait1) | set(trait2))
+
+    ################################
+    # 查询SNP和基因的关系，无重复
+    # SNP为必填
+    # 如果未指定基因，则取出包含该SNP的所有记录
+    # 后续查询基因与cancer的关系时，使用与该SNP关联的基因作为查询条件
+    ################################
+    SNP_gene = []
+    SNP_gene_query = {"SNP": {"$in": snp}}
+    if len(gene)>0:
+        SNP_gene_query.update(({"GeneSymbol": {"$in": gene}}))
+    for i in eQTL.find(SNP_gene_query, {"_id":0}):
+        SNP_gene.append(i)
+    if len(gene)==0:
+        # 提取键为geneSymbol的值并去重
+        gene = list(set(item['GeneSymbol'] for item in SNP_gene))
+    ################################
+    # 查询SNP和甲基化的关系
+    ################################
+    SNP_methy = []
+    SNP_methy_query = {"SNP": {"$in": snp}}
+    if len(methy)>0:
+        SNP_methy_query.update(({"Probe": {"$in": methy}}))
+    for i in meQTL.find(SNP_methy_query, {"_id":0}):
+        SNP_methy.append(i)
+    if len(methy)==0:
+        methy = list(set(item['Probe'] for item in SNP_methy))
+    ################################
+    # 查询SNP和蛋白质的关系，有重复
+    ################################
+    SNP_protein = []
+    SNP_protein_query = {"SNP": {"$in": snp}}
+    if len(protein)>0:
+        SNP_protein_query.update(({"gene prot_new": {"$in": protein}}))
+    for i in pQTL.find(SNP_protein_query, {"_id":0}):
+        SNP_protein.append(i)
+    if len(protein)==0:
+        protein = list(set(item['gene prot'] for item in SNP_protein))
+
+    ################################
+    # 查询基因与癌症的关系
+    ################################
+    gene_cancer = []
+    gene_cancer_query = {"cancer": {"$in": cancers}, "Gene": {"$in": gene}}
+    for i in SMR_eQTL.find(gene_cancer_query, {"_id":0}):
+        gene_cancer.append(i)
+    ################################
+    # 查询甲基化与癌症的关系
+    ################################
+    methy_cancer = []
+    methy_cancer_query = {"cancer": {"$in": cancers},"probeID": {"$in": methy}}
+    for i in SMR_meQTL.find(methy_cancer_query, {"_id":0}):
+        methy_cancer.append(i)
+    ################################
+    # 查询蛋白与癌症的关系
+    ################################
+    protein_cancer = []
+    protein_cancer_query = {"cancer": {"$in": cancers},"Gene": {"$in": protein}}
+    for i in SMR_pQTL.find(protein_cancer_query, {"_id":0}):
+        protein_cancer.append(i)
+    ################################
+    # 查询甲基化与基因的关系
+    ################################
+    methy_gene = []
+    methy_gene_query = {"Expo_ID": {"$in": methy},"Outco_Gene": {"$in": gene}}
+    for i in SMR_meQTL_eQTL.find(methy_gene_query, {"_id":0}):
+        methy_gene.append(i)
+
+    ################################
+    # echart data提取
+    ################################
+    # 提取节点信息
+    tmp1 = [{"id":item["snpid"], "position":item["position"], "alleles":item["a1"]+"/"+item["a2"], "EAF": item["EURaf"], "category":"SNP"} for item in SNP_cancer]
+    tmp2 = [{"id":item["SNP"], "position":item["SNPPosition"], "alleles":item["AssessedAllele"]+"/"+item["OtherAllele"], "category":"SNP"} for item in SNP_gene]
+    tmp3 = [{"id":item["SNP"], "position":item["SNPPosition"], "alleles":item["A1"]+"/"+item["A2"], "category":"SNP"} for item in SNP_methy]
+    tmp4 = [{"id":item["SNP"], "position":item["SNPPosition"], "alleles":item["A1"]+"/"+item["A0"], "category":"SNP"} for item in SNP_protein]
+    tmp = tmp1 + tmp2 + tmp3 + tmp4
+    unique = {entry['id'] for entry in tmp}
+    SNP_node = [{'id': snp,
+                    'position': next(item['position'] for item in tmp if item['id'] == snp),
+                    'alleles': next(item['alleles'] for item in tmp if item['id'] == snp),
+                    'EAF': next(item['EAF'] for item in tmp if item['id'] == snp),
+                    'category': next(item['category'] for item in tmp if item['id'] == snp)}
+                    for snp in unique]
+    tmp1 = [{"id":item["Probe"], "position":item["ProbePosition"]} for item in SNP_methy]
+    tmp2 = [{"id":item["probeID"], "position":item["methyPosition"]} for item in methy_cancer]
+    tmp3 = [{"id":item["Expo_ID"], "position":item["methyPosition"]} for item in methy_gene]
+    tmp = tmp1+tmp2+tmp3
+    unique = {entry['id'] for entry in tmp}
+    methy_node = [{'id': methy,
+                    'position': next(item['position'] for item in tmp if item['id'] == methy),
+                    'category': "methylation"}
+                    for methy in unique]
+    # # gene和protein都使用genesymbol表示，如果用两个节点表示，名字重复了，在echart中会存在问题
+    # # 这里使用同一个节点，指定link的type，不同type使用不同的颜色
+    # tmp1 = [item["GeneSymbol"] for item in SNP_gene]
+    # tmp2 = [item["Gene"] for item in gene_cancer]
+    # tmp3 = [item["gene prot"] for item in SNP_protein]
+    # tmp4 = [item["Gene"] for item in protein_cancer]
+    # geneSymbol_node = list(set(tmp1 + tmp2 + tmp3 + tmp4))
+    # ID表示唯一节点，genesymbol作为节点name显示
+    tmp1 = [{"id":item["Gene"], "name":item["GeneSymbol"], "position":item["GenePosition"]} for item in SNP_gene]
+    tmp2 = [{"id":item["probeID"], "name":item["Gene"], "position":item["genePosition"]} for item in gene_cancer]
+    tmp3 = [{"id":item["Outco_ID"], "name":item["Outco_Gene"], "position":item["genePosition"]} for item in methy_gene]
+    tmp = tmp1+tmp2+tmp3
+    unique = {entry['id'] for entry in tmp}
+    gene_node = [{'id': gene,
+                    'name': next(item['name'] for item in tmp if item['id'] == gene),
+                    'position': next(item['position'] for item in tmp if item['id'] == gene),
+                    'category': "gene"}
+                    for gene in unique]
+    tmp1 = [{"id":item["ID"], "name":item["gene prot_new"], "position":item["protPosition"]} for item in SNP_protein]
+    tmp2 = [{"id":item["ID"], "name":item["Gene"], "position":item["protPosition"]} for item in protein_cancer]
+    tmp = tmp1+tmp2
+    unique = {entry['id'] for entry in tmp}
+    protein_node = [{'id': protein,
+                    'name': next(item['name'] for item in tmp if item['id'] == protein),
+                    'position': next(item['position'] for item in tmp if item['id'] == protein),
+                    'category': "protein"}
+                    for protein in unique]
+    tmp1 = [item["trait"] for item in SNP_cancer]
+    tmp2 = [item["cancer"] for item in gene_cancer]
+    tmp3 = [item["cancer"] for item in methy_cancer]
+    tmp4 = [item["cancer"] for item in protein_cancer]
+    cancer_node = list(set(tmp1 + tmp2 + tmp3 + tmp4))
+
+    echart_data = SNP_node + methy_node + gene_node + protein_node
+    echart_data.extend([{"name": item, "category": "cancer"} for item in cancer_node])
+    # # 转为echart需要的node data格式
+    # # SNP_echart_data = [{"node_name": i, "category": "SNP"} for i in SNP_node]
+    # # gene_echart_data = [{"node_name": i, "category": "gene"} for i in gene_node]
+    # # methy_echart_data = [{"node_name": i, "category": "methy"} for i in methy_node]
+    # # protein_echart_data = [{"node_name": i, "category": "protein"} for i in protein_node]
+    # # cancer_echart_data = [{"node_name": i, "category": "cancer"} for i in cancer_node]
+    # echart_data =  [{"name": item["name"], "category": "SNP"} for item in SNP_node]
+    # # echart_data.extend([{"name": i, "category": "gene"} for i in geneSymbol_node])
+    # echart_data.extend([{"name": item["name"], "category": "methy"} for item in methy_node])
+    # echart_data.extend([{"name": item, "category": "gene"} for item in gene_node])
+    # echart_data.extend([{"name": item, "category": "protein"} for item in protein_node])
+    # echart_data.extend([{"name": item, "category": "cancer"} for item in cancer_node])
+    # # 存在重复节点，构建唯一标识符
+    # for i, item in enumerate(echart_data, start=1):
+    #     item["id"] = "node_" + str(i)
+    # # 创建节点索引映射字典
+    # node_index_map = {(node['name'], node['category']): index for index, node in enumerate(echart_data)}
+
+    # 提取关系信息
+    # SNP_cancer_link = [{"source": item["snpid"], "target": item["trait"]} for item in SNP_cancer]
+    # SNP_gene_link = [{"source": item["SNP"], "target": item["GeneSymbol"]} for item in SNP_gene]
+    # SNP_methy_link = [{"source": item["SNP"], "target": item["Probe"]} for item in SNP_methy]
+    # SNP_protein_link = [{"source": item["rsids"], "target": item["gene prot"]} for item in SNP_protein]
+    # gene_cancer_link = [{"source": item["Gene"], "target": item["cancer"]} for item in gene_cancer]
+    # methy_cancer_link = [{"source": item["probeID"], "target": item["cancer"]} for item in methy_cancer]
+    # protein_cancer_link = [{"source": item["Gene"], "target": item["cancer"]} for item in protein_cancer]
+    echart_link = [{"source": item["snpid"], "target": item["trait"], "Effect allele": item["a1"], "Other allele": item["a2"], "Beta": item["beta"], "SE": item["se"], "P value": item["pval"], "Source": item["source"], "category": "GWAS"} for item in SNP_cancer]
+    echart_link.extend([{"source": item["SNP"], "target": item["Probe"],"Effect allele": item["A1"], "Other allele": item["A2"], "Beta": item["b"], "SE": item["SE"], "P value": item["p"], "Source": "PMID 30514905", "category": "meQTL"} for item in SNP_methy])
+    echart_link.extend([{"source": item["SNP"], "target": item["Gene"], "Effect allele": item["AssessedAllele"],"Other allele": item["OtherAllele"], "Zscore": item["Zscore"], "P value": item["Pvalue"], "Source": "eQTLGen", "category": "eQTL"} for item in SNP_gene])
+    echart_link.extend([{"source": item["SNP"], "target": item["ID"], "Effect allele": item["A1"],"Other allele": item["A0"], "Beta": item["Beta"], "SE": item["SE"], "P value": item["Pval"], "Source": "PMID 37794188", "category": "pQTL"} for item in SNP_protein])
+    # SNP_gene_link = [{"source": item["SNP"], "target": item["GeneSymbol"]} for item in SNP_gene]
+    # # 由于gene和protein中的genesymbol存在重复，替换链接中的节点名称为索引位置
+    # for link in SNP_gene_link:
+    #     link['target'] = node_index_map[(link['target'], 'gene')]
+    # echart_link.extend(SNP_gene_link)
+
+    # SNP_protein_link = [{"source": item["rsids"], "target": item["gene prot"]} for item in SNP_protein]
+    # for link in SNP_protein_link:
+    #     link['target'] = node_index_map[(link['target'], 'protein')]
+    # echart_link.extend(SNP_protein_link)
+    
+    echart_link.extend([{"source": item["probeID"], "target": item["cancer"], "Beta": item["b_SMR"], "SE": item["se_SMR"], "P_SMR": item["p_SMR"], "P_HEIDI": item["p_HEIDI"], "category": "SMR"} for item in methy_cancer])
+    echart_link.extend([{"source": item["probeID"], "target": item["cancer"], "Beta": item["b_SMR"], "SE": item["se_SMR"], "P_SMR": item["p_SMR"], "P_HEIDI": item["p_HEIDI"], "category": "SMR"} for item in gene_cancer])
+    echart_link.extend([{"source": item["probeID"], "target": item["cancer"], "Beta": item["b_SMR"], "SE": item["se_SMR"], "P_SMR": item["p_SMR"], "P_HEIDI": item["p_HEIDI"], "category": "SMR"} for item in protein_cancer])
+    echart_link.extend([{"source": item["Expo_ID"], "target": item["Outco_ID"], "Beta": item["b_SMR"], "SE": item["se_SMR"], "P_SMR": item["p_SMR"], "P_HEIDI": item["p_HEIDI"], "category": "SMR"} for item in methy_gene])
+    # gene_cancer_link = [{"source": item["Gene"], "target": item["cancer"]} for item in gene_cancer]
+    # gene_cancer_link = [dict(t) for t in {tuple(d.items()) for d in gene_cancer_link}] # 多个probe对应一个genesymbol，需要去重
+    # for link in gene_cancer_link:
+    #     link['source'] = node_index_map[(link['source'], 'gene')]
+    # echart_link.extend(gene_cancer_link)
+
+    # protein_cancer_link = [{"source": item["Gene"], "target": item["cancer"]} for item in protein_cancer]
+    # for link in protein_cancer_link:
+    #     link['source'] = node_index_map[(link['source'], 'protein')]
+    # echart_link.extend(protein_cancer_link)
+
+    print(cancers)
+    print(gene)
+    print(methy)
+    print(snp)
+    print(SNP_cancer)
+    print(SNP_gene)
+    print(SNP_methy)
+    print(SNP_protein)
+    print(gene_cancer)
+    print(methy_cancer)
+    print(protein_cancer)
+    print(methy_gene)
+
+
+    return {"SNP_cancer": SNP_cancer, "SNP_gene": SNP_gene, "SNP_methy": SNP_methy, "SNP_protein": SNP_protein, 
+    "gene_cancer": gene_cancer, "methy_cancer": methy_cancer, "protein_cancer": protein_cancer, "echart_data": echart_data, "echart_link": echart_link}
+
+
+
+
+@app.route("/test", methods = ["POST", "GET"])
+def test():
+    filterForm = request.get_json()
+    cancer = filterForm["cancerType"]
+    print("hello")
+    print(cancer)
+    return "hello"
+
+@app.route("/cancerdb/download/sig_BRCA-UCEC")
+def download_UCEC():
+    # 返回文件给客户端
+    return send_from_directory("/home/yanyq/database/flask_vue/downloadFiles", "sig_BRCA-UCEC", as_attachment=True)
+
+@app.route("/cancerdb/download/sig_BRCA-OV")
+def download_OV():
+    # 返回文件给客户端
+    return send_from_directory("/home/yanyq/database/flask_vue/downloadFiles", "sig_BRCA-UCEC",as_attachment=True)
+
+
+@app.route('/blca', methods=['GET', "POST"])
+def download_blca():
+    print("hello")
+    path = '/home/yanyq/share_genetics/result/WGCNA/moduleCluster/BLCA.pdf'
+    return send_file(path, as_attachment=False)
+
+
+
+ 
+if __name__ == '__main__':
+    app.run()

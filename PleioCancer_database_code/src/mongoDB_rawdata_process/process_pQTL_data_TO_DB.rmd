@@ -1,0 +1,51 @@
+---
+title: "提取pQTL数据"
+output: html_document
+date: "2024-11-28"
+---
+# 从网站下载了所有pQTL数据
+# 提取了SMR fdr＜0.05基因对应的pQTL
+# 对于剩余的基因，如果受PLACO SNP调控，也被提取出来，网络图绘制需要
+# 这样MongoDB只需要一个pQTL数据表
+
+# 1. SMR 基因对应的所有pQTL
+
+```{bash}
+# 提取SMR probe
+smr --beqtl-summary /home/yanyq/cogenetics/data/pQTL/smr_input/pQTL --genes /home/yanyq/cogenetics/result/smr_multiSNP_0.01/pQTL/all_cancer_fdr_0.05.msmr.proteinGenelist --query 1 --out /home/yanyq/cogenetics/data/pQTL/SMR_1MB
+```
+
+# 2. 在非SMR基因中，找PLACO SNP调控的eQTL
+```{bash}
+# 提取显著的蛋白质QTL
+smr --beqtl-summary /home/yanyq/cogenetics/data/pQTL/smr_input/pQTL --query 5.0e-8 --out /home/yanyq/cogenetics/data/pQTL/cis_5e8
+```
+
+```{r}
+# PLACO SNP位置
+library(readr)
+all = as.data.frame(read_tsv("/home/yanyq/share_genetics/result/PLACO/all"))
+all = all[!(grepl("CORP", all$trait1)|grepl("CORP", all$trait2)),]
+
+f = as.data.frame(read_tsv("/home/yanyq/cogenetics/data/pQTL/cis_5e8.txt"))
+pQTL = f[f$SNP%in%all$snpid,]
+SMR = as.data.frame(read_tsv("/home/yanyq/cogenetics/data/pQTL/SMR_1MB.txt"))
+SMR_pQTL = read_tsv("/home/yanyq/cogenetics/result/smr_multiSNP_0.01/pQTL/all_cancer_fdr_0.05_withSymbol.msmr")
+SMR = SMR[SMR$Probe%in%SMR_pQTL$probeID,]
+
+placo_SMR = rbind(pQTL,SMR)
+placo_SMR = unique(placo_SMR)
+placo_SMR$PLACO = placo_SMR$SNP%in%all$snpid&placo_SMR$p<5e-8
+table(placo_SMR$PLACO)
+which(duplicated(paste0(placo_SMR$SNP,placo_SMR$Probe)))
+placo_SMR$Probe_Chr = as.numeric(placo_SMR$Probe_Chr)
+placo_SMR$Probe_bp = as.numeric(placo_SMR$Probe_bp)
+
+write_tsv(placo_SMR,"~/cogenetics/data/pQTL/cispQTL_filtered_by_SMRprotein_and_PLACO")
+placo_SMR = as.data.frame(read_tsv("~/cogenetics/data/pQTL/cispQTL_filtered_by_SMRprotein_and_PLACO"))
+placo_SMR$sig = ifelse(placo_SMR$p<5e-8,"Yes","No")
+write_tsv(placo_SMR,"~/cogenetics/data/pQTL/cispQTL_filtered_by_SMRprotein_and_PLACO")
+
+```
+
+
